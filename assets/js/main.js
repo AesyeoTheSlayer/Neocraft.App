@@ -8,12 +8,20 @@
   function buildHeader() {
     var root = document.querySelector('[data-site-header]');
     if (!root) return;
+    var page = location.pathname.split('/').pop() || 'index.html';
+    var onHome = page === 'index.html';
+    var onUpdates = page === 'updates.html' || page.indexOf('update-') === 0;
+    function current(active) { return active ? ' aria-current="page"' : ''; }
     root.innerHTML =
       '<a class="skip-link" href="#main">Skip to content</a>' +
       '<header class="nav"><div class="nav__inner">' +
       '<a class="brand" href="index.html">' + cube() + '<span class="brand__text">Neo<span>Craft</span></span><span class="brand__tag">Rust/WASM</span></a>' +
       '<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation"><span></span></button>' +
-      '<nav class="nav__links" id="navlinks" aria-label="Main"><a href="#about">About</a></nav>' +
+      '<nav class="nav__links" id="navlinks" aria-label="Main">' +
+      '<a href="index.html"' + current(onHome) + '>Home</a>' +
+      '<a href="updates.html"' + current(onUpdates) + '>Updates</a>' +
+      '<a href="signup.html"' + current(page === 'signup.html' || page === 'confirmed.html') + '>Get updates</a>' +
+      '</nav>' +
       '</div></header>';
   }
 
@@ -23,6 +31,7 @@
     root.innerHTML =
       '<footer class="footer"><div class="wrap"><div class="footer__bottom">' +
       '<p class="footer__legal mb-0">NeoCraft is an independent, unofficial project. It is not affiliated with or endorsed by Mojang Studios or Microsoft.</p>' +
+      '<nav class="footer__links" aria-label="Footer"><a href="updates.html">Updates</a><a href="signup.html">Get updates</a></nav>' +
       '</div></div></footer>';
   }
 

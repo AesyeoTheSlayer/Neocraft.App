@@ -1239,3 +1239,121 @@ body::before {
 @media (max-width: 370px) {
   .version-grid { grid-template-columns: 1fr; }
 }
+
+/* Updates and newsletter pages. */
+.content-page {
+  min-height: calc(100vh - var(--nav-h));
+  padding: 70px 0 88px;
+}
+.page-intro {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+.page-intro h1 { margin-bottom: 14px; }
+.page-intro p { max-width: 62ch; font-size: .94rem; }
+.page-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 23px; }
+.updates-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 285px;
+  gap: 24px;
+  align-items: start;
+}
+.updates-feed { display: grid; gap: 14px; }
+.update-card {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 22px;
+  padding: 25px;
+  color: inherit;
+  background: #2c2c33;
+  border: 3px solid #08080a;
+  box-shadow: inset 3px 3px 0 rgba(255,255,255,.11), inset -3px -3px 0 rgba(0,0,0,.48);
+}
+.update-card:hover { color: inherit; text-decoration: none; border-color: #55d9ee; }
+.update-card__date { color: var(--mc-gold); font-size: .63rem; line-height: 1.45; text-transform: uppercase; }
+.update-card__date span { display: block; margin-top: 5px; color: var(--ink-3); }
+.update-card h2 { margin-bottom: 8px; font-size: 1.12rem; }
+.update-card p { margin: 0; font-size: .8rem; line-height: 1.65; }
+.update-card__link { display: inline-block; margin-top: 13px; color: var(--mc-aqua); font-size: .68rem; font-weight: 700; }
+.updates-side,
+.signup-panel,
+.post-body {
+  padding: 26px;
+  background: #2c2c33;
+  border: 3px solid #08080a;
+  box-shadow: inset 3px 3px 0 rgba(255,255,255,.11), inset -3px -3px 0 rgba(0,0,0,.48), 7px 7px 0 rgba(0,0,0,.28);
+}
+.updates-side { position: sticky; top: calc(var(--nav-h) + 22px); }
+.updates-side h2 { font-size: .95rem; }
+.updates-side p { font-size: .72rem; line-height: 1.65; }
+.updates-side .btn { width: 100%; }
+.updates-side .btn + .btn { margin-top: 8px; }
+.post-shell { max-width: 850px; margin-inline: auto; }
+.post-back { display: inline-block; margin-bottom: 22px; font-size: .7rem; }
+.post-head { margin-bottom: 22px; }
+.post-head__meta { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin-bottom: 15px; }
+.post-head time { color: var(--mc-gold); font-size: .65rem; }
+.post-body { padding: clamp(25px, 5vw, 48px); }
+.post-body h2 { margin-top: 32px; font-size: 1.08rem; }
+.post-body h2:first-child { margin-top: 0; }
+.post-body p, .post-body li { font-size: .85rem; line-height: 1.8; }
+.post-body ul { margin: 0 0 1.2rem; padding-left: 22px; color: var(--ink-2); }
+.post-body li + li { margin-top: 7px; }
+.post-body li::marker { color: var(--mc-green); }
+.signup-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(360px, 1.12fr);
+  gap: 26px;
+  align-items: start;
+}
+.signup-copy { padding: 18px 0; }
+.signup-copy h2 { margin-bottom: 13px; }
+.signup-list { margin: 24px 0 0; padding: 0; list-style: none; }
+.signup-list li { position: relative; margin-bottom: 12px; padding-left: 24px; color: var(--ink-2); font-size: .78rem; }
+.signup-list li::before { content: ""; position: absolute; left: 0; top: .52em; width: 11px; height: 11px; background: var(--mc-green); box-shadow: inset 0 0 0 3px rgba(0,0,0,.35), 2px 2px 0 #000; }
+.newsletter-form .field { margin-bottom: 14px; }
+.newsletter-form .btn { width: 100%; }
+.newsletter-status { margin: 14px 0 0; padding: 11px 12px; color: #e6d5ae; font-size: .67rem; line-height: 1.55; background: #3b2d19; border-left: 4px solid var(--mc-gold); }
+.newsletter-privacy { margin: 13px 0 0; color: var(--ink-3); font-size: .62rem; line-height: 1.6; }
+.newsletter-response-frame { position: absolute; width: 1px; height: 1px; border: 0; opacity: 0; pointer-events: none; }
+.newsletter-form.is-submitted .field,
+.newsletter-form.is-submitted .btn,
+.newsletter-form.is-submitted .newsletter-privacy { display: none; }
+.newsletter-form.is-submitted .newsletter-status { margin-top: 0; color: #d8ffd8; background: #203820; border-left-color: var(--mc-green); }
+.confirmation-card {
+  max-width: 680px;
+  margin-inline: auto;
+  padding: clamp(28px, 6vw, 54px);
+  text-align: center;
+  background: #2c2c33;
+  border: 3px solid #08080a;
+  box-shadow: inset 3px 3px 0 rgba(255,255,255,.12), inset -3px -3px 0 rgba(0,0,0,.5), 8px 8px 0 rgba(0,0,0,.3);
+}
+.confirmation-card__mark {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 22px;
+  color: #163416;
+  font-size: 1.3rem;
+  font-weight: 800;
+  background: var(--mc-green);
+  border: 3px solid #050905;
+  box-shadow: inset 3px 3px 0 #a7ffa7, inset -3px -3px 0 #249124;
+}
+.confirmation-card h1 { margin-bottom: 14px; }
+.confirmation-card p { max-width: 52ch; margin-inline: auto; }
+.confirmation-card .page-actions { justify-content: center; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 15px; }
+.footer__links a { color: var(--ink-2); font-size: .7rem; }
+.footer__links a:hover { color: var(--mc-yellow); }
+@media (max-width: 820px) {
+  .updates-layout, .signup-layout { grid-template-columns: 1fr; }
+  .updates-side { position: static; }
+}
+@media (max-width: 560px) {
+  .content-page { padding-block: 48px 64px; }
+  .update-card { grid-template-columns: 1fr; gap: 10px; padding: 20px; }
+  .signup-panel, .post-body { padding: 22px; }
+}

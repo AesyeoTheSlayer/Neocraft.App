@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>NeoCraft development updates</title>
+    <link>https://aesyeotheslayer.github.io/Neocraft.App/updates.html</link>
+    <description>Development news, roadmap changes, and progress reports from NeoCraft.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Welcome to the NeoCraft development log</title>
+      <link>https://aesyeotheslayer.github.io/Neocraft.App/update-welcome-2026-08.html</link>
+      <guid isPermaLink="true">https://aesyeotheslayer.github.io/Neocraft.App/update-welcome-2026-08.html</guid>
+      <pubDate>Fri, 07 Aug 2026 12:00:00 GMT</pubDate>
+      <description>An introduction to NeoCraft, what is currently being built, and what to expect from future development updates.</description>
+    </item>
+  </channel>
+</rss>
