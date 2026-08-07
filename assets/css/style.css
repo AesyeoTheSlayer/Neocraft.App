@@ -1049,54 +1049,42 @@ body::before {
   border-color: #337d8c;
 }
 
-/* The Minecraft roadmap ends at Beta 1.7.3, then branches into NeoCraft. */
-.project-path {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  gap: 9px;
-  align-items: stretch;
+/* Account requirement for every listed release. */
+.project-auth {
+  display: flex;
+  gap: 12px;
+  align-items: center;
   margin: 0 0 16px;
-}
-.project-path__stage {
   padding: 13px 14px;
-  background: #24252b;
-  border: 1px solid #111114;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.065);
+  background: #263940;
+  border: 1px solid #11171a;
+  box-shadow: inset 3px 0 0 var(--mc-aqua), inset 0 1px 0 rgba(255,255,255,.065);
 }
-.project-path__stage > span {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--mc-aqua);
-  font-size: .56rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+.project-auth > span {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  color: #101719;
+  font-size: .8rem;
+  font-weight: 800;
+  background: var(--mc-aqua);
+  border: 2px solid #101719;
+  box-shadow: inset 2px 2px 0 rgba(255,255,255,.35), inset -2px -2px 0 #267786;
 }
-.project-path__stage strong {
+.project-auth strong {
   display: block;
-  margin-bottom: 5px;
-  color: #f2f2f5;
+  margin-bottom: 3px;
+  color: #dffaff;
   font-size: .72rem;
-  line-height: 1.4;
 }
-.project-path__stage p {
+.project-auth p {
   margin: 0;
-  color: var(--ink-3);
+  color: #bdcdd1;
   font-size: .67rem;
   line-height: 1.5;
 }
-.project-path__stage--future {
-  background: #2d2938;
-  border-color: #17131e;
-}
-.project-path__stage--future > span { color: #c7a8ff; }
-.project-path__arrow {
-  align-self: center;
-  color: #ffd257;
-  font-size: 1rem;
-  text-shadow: 2px 2px 0 rgba(0,0,0,.6);
-}
-
 .roadmap-legend {
   display: flex;
   flex-wrap: wrap;
@@ -1238,18 +1226,14 @@ body::before {
   text-align: left;
   line-height: 1.55;
   background: rgba(0,0,0,.22);
-  border-left: 3px solid #b18cf1;
+  border-left: 3px solid var(--mc-aqua);
 }
-.roadmap-panel__note strong { color: #d8c2ff; }
+.roadmap-panel__note strong { color: #b9f5ff; }
 
 @media (max-width: 1120px) and (min-width: 941px) {
   .version-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .project-path { grid-template-columns: 1fr; }
-  .project-path__arrow { justify-self: center; transform: rotate(90deg); }
 }
 @media (max-width: 600px) {
-  .project-path { grid-template-columns: 1fr; }
-  .project-path__arrow { justify-self: center; transform: rotate(90deg); }
   .version-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 370px) {

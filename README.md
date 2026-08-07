@@ -9,8 +9,7 @@ The homepage contains the project premise, current status, and the complete 41-r
 - Alpha 1.1.2_01 is in development.
 - Every historical client release through Beta 1.7.3 is planned, in order.
 - All Minecraft-version releases require a Microsoft account.
-- A branch into an original NeoCraft game after Beta 1.7.3 is being considered, but the decision is not final.
 
-The entire roadmap—including its versions, order, account requirements, and post-Beta direction—can change at any time.
+The entire roadmap—including its versions, order, release plans, and account requirements—can change at any time.
 
 No public build or release date is currently announced.
