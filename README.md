@@ -2,12 +2,12 @@
 
 A compact, single-page coming-soon site for NeoCraft: a full Minecraft rewrite in Rust and WebAssembly.
 
-The homepage contains the project premise, current status, and the complete 41-release roadmap from Alpha 1.1.2_01 through Beta 1.7.3. The former detail-page URLs redirect to the matching section of the homepage.
+The homepage contains the project premise, current status, and the complete 42-release roadmap from Alpha 1.1.2_01 through Beta 1.8. The former detail-page URLs redirect to the matching section of the homepage.
 
 ## Current roadmap
 
 - Alpha 1.1.2_01 is in development.
-- Every historical client release through Beta 1.7.3 is planned, in order.
+- Every historical client release through Beta 1.8 is planned, in order.
 - All Minecraft-version releases require a Microsoft account.
 
 The entire roadmap—including its versions, order, release plans, and account requirements—can change at any time.
