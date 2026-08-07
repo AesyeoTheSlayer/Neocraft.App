@@ -8,7 +8,8 @@ The homepage contains the project premise, current status, and the complete 43-r
 
 - Alpha 1.1.2_01 is in development.
 - Every historical client release through Beta 1.8.1 is planned, in order.
-- All Minecraft-version releases require a Microsoft account.
+- Additional versions after Beta 1.8.1 are being considered.
+- All listed releases require a Microsoft account that owns Minecraft: Java Edition.
 
 The entire roadmap—including its versions, order, release plans, and account requirements—can change at any time.
 

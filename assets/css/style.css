@@ -1065,14 +1065,18 @@ body::before {
   height: 34px;
   flex: 0 0 auto;
   display: grid;
-  place-items: center;
-  color: #101719;
-  font-size: .8rem;
-  font-weight: 800;
-  background: var(--mc-aqua);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  padding: 5px;
+  background: #171b1e;
   border: 2px solid #101719;
-  box-shadow: inset 2px 2px 0 rgba(255,255,255,.35), inset -2px -2px 0 #267786;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.12), inset -1px -1px 0 rgba(0,0,0,.5);
 }
+.microsoft-logo > span:nth-child(1) { background: #f25022; }
+.microsoft-logo > span:nth-child(2) { background: #7fba00; }
+.microsoft-logo > span:nth-child(3) { background: #00a4ef; }
+.microsoft-logo > span:nth-child(4) { background: #ffb900; }
 .project-auth strong {
   display: block;
   margin-bottom: 3px;
@@ -1214,10 +1218,6 @@ body::before {
   color: #ffd257;
   background: #201c12;
   border-color: #8f742e;
-}
-.version-grid li.final-minecraft {
-  border-color: #337d8c;
-  box-shadow: inset 3px 0 0 var(--mc-aqua), inset 0 0 0 1px rgba(85,217,238,.12);
 }
 .roadmap-panel__note {
   margin-top: 16px;
