@@ -6,12 +6,12 @@
   <title>NeoCraft — Minecraft rewritten in Rust and WebAssembly</title>
   <meta name="description" content="NeoCraft is a full Minecraft rewrite in Rust and WebAssembly. Alpha 1.1.2_01 is in development.">
   <meta property="og:title" content="NeoCraft — Minecraft rewritten in Rust and WebAssembly">
-  <meta property="og:description" content="A full Minecraft rewrite in Rust and WebAssembly, rebuilt one version at a time.">
+  <meta property="og:description" content="NeoCraft’s current, non-final plan: Minecraft client releases from Alpha 1.1.2_01 through Beta 1.7.3, rewritten in Rust and WebAssembly.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0d12">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 30 9 16 16 2 9Z' fill='%235dd45d'/%3E%3Cpath d='M2 9 16 16v14L2 23Z' fill='%236b4a2f'/%3E%3Cpath d='M30 9 16 16v14l14-7Z' fill='%238a6440'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/font.css?v=25">
-  <link rel="stylesheet" href="assets/css/style.css?v=27">
+  <link rel="stylesheet" href="assets/css/style.css?v=29">
 </head>
 <body>
   <div data-site-header></div>
@@ -40,12 +40,26 @@
             <article class="project-summary">
               <span class="eyebrow">The project</span>
               <h2>Minecraft, rewritten from scratch.</h2>
-              <p class="project-summary__lead">Neocraft is a full 1:1 rewrite of Minecraft in Rust and compiled to WebAssembly, for the smoothest and most lag-free browser-based Minecraft experience.</p>
+              <p class="project-summary__lead">NeoCraft is a full 1:1 rewrite of Minecraft in Rust, compiled to WebAssembly for a smooth, low-lag browser experience. It will recreate every client release from Alpha 1.1.2_01 through Beta 1.7.3.</p>
 
               <div class="project-points" aria-label="Project principles">
                 <div class="project-point"><span>01</span><div><h3>Rust engine</h3><p>Its own codebase—not a Java wrapper.</p></div></div>
                 <div class="project-point"><span>02</span><div><h3>Browser runtime</h3><p>Compiled to WebAssembly.</p></div></div>
-                <div class="project-point"><span>03</span><div><h3>Faithful versions</h3><p>Each target keeps its mechanics and feel.</p></div></div>
+                <div class="project-point"><span>03</span><div><h3>Every classic release</h3><p>Each target keeps its original mechanics and feel.</p></div></div>
+              </div>
+
+              <div class="project-path" aria-label="NeoCraft release direction">
+                <div class="project-path__stage">
+                  <span>Minecraft era</span>
+                  <strong>Alpha 1.1.2_01 → Beta 1.7.3</strong>
+                  <p>Every release requires a Microsoft account.</p>
+                </div>
+                <span class="project-path__arrow" aria-hidden="true">→</span>
+                <div class="project-path__stage project-path__stage--future">
+                  <span>Possible direction after Beta 1.7.3</span>
+                  <strong>Original NeoCraft game — not final</strong>
+                  <p>This direction is still being decided. It may change or may not happen.</p>
+                </div>
               </div>
 
               <div class="project-note" id="status"><span aria-hidden="true">!</span><p><strong>No public build yet.</strong><br>There is no announced release date.</p></div>
@@ -54,17 +68,74 @@
             <section class="roadmap-panel" id="roadmap" aria-labelledby="roadmap-title">
               <div class="roadmap-panel__head">
                 <div><span class="eyebrow eyebrow--gold">Roadmap</span><h2 id="roadmap-title">Version targets</h2></div>
-                <span class="roadmap-count">6 targets</span>
+                <span class="roadmap-count">41 releases</span>
               </div>
-              <ol class="version-list">
-                <li class="current"><span class="version-list__number">01</span><div><strong>Alpha 1.1.2_01</strong><small>Current target</small></div><span class="status current">In development</span></li>
-                <li class="planned"><span class="version-list__number">02</span><div><strong>Beta 1.8</strong></div><span class="status planned">Planned</span></li>
-                <li><span class="version-list__number">03</span><div><strong>Release 1.0</strong></div><span class="status">Not started</span></li>
-                <li><span class="version-list__number">04</span><div><strong>Release 1.5.2</strong></div><span class="status">Not started</span></li>
-                <li><span class="version-list__number">05</span><div><strong>Release 1.8.9</strong></div><span class="status">Not started</span></li>
-                <li><span class="version-list__number">06</span><div><strong>Release 1.12.2</strong></div><span class="status">Not started</span></li>
-              </ol>
-              <p class="roadmap-panel__note">This is subject to change at any time.</p>
+              <div class="roadmap-disclaimer" role="note" aria-label="Roadmap disclaimer">
+                <span class="roadmap-disclaimer__mark" aria-hidden="true">!</span>
+                <div>
+                  <strong>This entire roadmap can change at literally any time.</strong>
+                  <p>Nothing here is a final promise—including the versions, their order, account requirements, or whether NeoCraft branches into an original game after Beta 1.7.3. That future direction is still being decided.</p>
+                </div>
+              </div>
+              <div class="roadmap-legend" aria-label="Roadmap status key">
+                <span class="roadmap-legend__current">In development</span>
+                <span class="roadmap-legend__planned">Planned</span>
+              </div>
+
+              <section class="version-era" aria-labelledby="alpha-era-title">
+                <div class="version-era__head"><h3 id="alpha-era-title">Alpha</h3><span>15 releases</span></div>
+                <ol class="version-grid">
+                  <li class="current"><span>01</span><div><strong>Alpha 1.1.2_01</strong><small>Current target</small></div></li>
+                  <li><span>02</span><strong>Alpha 1.2.0</strong></li>
+                  <li><span>03</span><strong>Alpha 1.2.0_01</strong></li>
+                  <li><span>04</span><strong>Alpha 1.2.0_02</strong></li>
+                  <li><span>05</span><strong>Alpha 1.2.1</strong></li>
+                  <li><span>06</span><strong>Alpha 1.2.1_01</strong></li>
+                  <li><span>07</span><strong>Alpha 1.2.2</strong></li>
+                  <li><span>08</span><strong>Alpha 1.2.3</strong></li>
+                  <li><span>09</span><strong>Alpha 1.2.3_01</strong></li>
+                  <li><span>10</span><strong>Alpha 1.2.3_02</strong></li>
+                  <li><span>11</span><strong>Alpha 1.2.3_04</strong></li>
+                  <li><span>12</span><strong>Alpha 1.2.3_05</strong></li>
+                  <li><span>13</span><strong>Alpha 1.2.4_01</strong></li>
+                  <li><span>14</span><strong>Alpha 1.2.5</strong></li>
+                  <li><span>15</span><strong>Alpha 1.2.6</strong></li>
+                </ol>
+              </section>
+
+              <section class="version-era" aria-labelledby="beta-era-title">
+                <div class="version-era__head"><h3 id="beta-era-title">Beta</h3><span>26 releases</span></div>
+                <ol class="version-grid" start="16">
+                  <li><span>16</span><strong>Beta 1.0</strong></li>
+                  <li><span>17</span><strong>Beta 1.0_01</strong></li>
+                  <li><span>18</span><strong>Beta 1.0.2</strong></li>
+                  <li><span>19</span><strong>Beta 1.1</strong></li>
+                  <li><span>20</span><strong>Beta 1.1_01</strong></li>
+                  <li><span>21</span><strong>Beta 1.1_02</strong></li>
+                  <li><span>22</span><strong>Beta 1.2</strong></li>
+                  <li><span>23</span><strong>Beta 1.2_01</strong></li>
+                  <li><span>24</span><strong>Beta 1.2_02</strong></li>
+                  <li><span>25</span><strong>Beta 1.3</strong></li>
+                  <li><span>26</span><strong>Beta 1.3_01</strong></li>
+                  <li><span>27</span><strong>Beta 1.4</strong></li>
+                  <li><span>28</span><strong>Beta 1.4_01</strong></li>
+                  <li><span>29</span><strong>Beta 1.5</strong></li>
+                  <li><span>30</span><strong>Beta 1.5_01</strong></li>
+                  <li><span>31</span><strong>Beta 1.6</strong></li>
+                  <li><span>32</span><strong>Beta 1.6.1</strong></li>
+                  <li><span>33</span><strong>Beta 1.6.2</strong></li>
+                  <li><span>34</span><strong>Beta 1.6.3</strong></li>
+                  <li><span>35</span><strong>Beta 1.6.4</strong></li>
+                  <li><span>36</span><strong>Beta 1.6.5</strong></li>
+                  <li><span>37</span><strong>Beta 1.6.6</strong></li>
+                  <li><span>38</span><strong>Beta 1.7</strong></li>
+                  <li><span>39</span><strong>Beta 1.7_01</strong></li>
+                  <li><span>40</span><strong>Beta 1.7.2</strong></li>
+                  <li class="final-minecraft"><span>41</span><div><strong>Beta 1.7.3</strong><small>Final Minecraft target</small></div></li>
+                </ol>
+              </section>
+
+              <p class="roadmap-panel__note"><strong>Under the current plan, Beta 1.7.3 is the final Minecraft recreation.</strong> A possible original NeoCraft game afterward is being considered, but that decision is not final.</p>
             </section>
           </div>
         </div>

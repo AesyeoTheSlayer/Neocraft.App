@@ -1048,3 +1048,210 @@ body::before {
   color: var(--mc-aqua);
   border-color: #337d8c;
 }
+
+/* The Minecraft roadmap ends at Beta 1.7.3, then branches into NeoCraft. */
+.project-path {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 9px;
+  align-items: stretch;
+  margin: 0 0 16px;
+}
+.project-path__stage {
+  padding: 13px 14px;
+  background: #24252b;
+  border: 1px solid #111114;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.065);
+}
+.project-path__stage > span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--mc-aqua);
+  font-size: .56rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.project-path__stage strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #f2f2f5;
+  font-size: .72rem;
+  line-height: 1.4;
+}
+.project-path__stage p {
+  margin: 0;
+  color: var(--ink-3);
+  font-size: .67rem;
+  line-height: 1.5;
+}
+.project-path__stage--future {
+  background: #2d2938;
+  border-color: #17131e;
+}
+.project-path__stage--future > span { color: #c7a8ff; }
+.project-path__arrow {
+  align-self: center;
+  color: #ffd257;
+  font-size: 1rem;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.6);
+}
+
+.roadmap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: -7px 0 16px;
+}
+.roadmap-legend span {
+  padding: 4px 8px;
+  font-size: .54rem;
+  font-weight: 700;
+  background: #19191d;
+  border: 1px solid #08080a;
+}
+.roadmap-legend__current { color: #ffd257; box-shadow: inset 3px 0 0 #ffd257; }
+.roadmap-legend__planned { color: var(--mc-aqua); box-shadow: inset 3px 0 0 var(--mc-aqua); }
+.roadmap-disclaimer {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  margin: -4px 0 16px;
+  padding: 13px 14px;
+  color: #fff1c5;
+  background: #3b2d19;
+  border: 2px solid #d79b24;
+  box-shadow: inset 0 1px 0 rgba(255,235,164,.2), 0 0 0 1px #120d05;
+}
+.roadmap-disclaimer__mark {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  color: #211300;
+  font-size: 1rem;
+  font-weight: 800;
+  background: #ffc13b;
+  border: 2px solid #140d02;
+  box-shadow: inset 2px 2px 0 #ffe19a, inset -2px -2px 0 #a56c00;
+}
+.roadmap-disclaimer strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffd86f;
+  font-size: .72rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+.roadmap-disclaimer p {
+  margin: 0;
+  color: #e4d8bc;
+  font-size: .65rem;
+  line-height: 1.55;
+}
+.version-era + .version-era { margin-top: 18px; }
+.version-era__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 7px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,.09);
+}
+.version-era__head h3 {
+  margin: 0;
+  color: #f1f1f3;
+  font-size: .8rem;
+}
+.version-era__head span {
+  color: var(--ink-3);
+  font-size: .56rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+.version-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.version-grid li {
+  min-width: 0;
+  min-height: 44px;
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  gap: 7px;
+  align-items: center;
+  padding: 6px 7px 6px 5px;
+  background: #263940;
+  border: 1px solid #11171a;
+  box-shadow: inset 3px 0 0 #55d9ee, inset 0 1px 0 rgba(255,255,255,.055);
+}
+.version-grid li > span {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  color: var(--mc-aqua);
+  font-size: .52rem;
+  background: #171b1e;
+  border: 1px solid #337d8c;
+}
+.version-grid strong {
+  min-width: 0;
+  display: block;
+  overflow-wrap: anywhere;
+  color: #e7e7eb;
+  font-size: .62rem;
+  line-height: 1.28;
+}
+.version-grid small {
+  display: block;
+  margin-top: 2px;
+  color: #efd079;
+  font-size: .51rem;
+  line-height: 1.25;
+}
+.version-grid li.current {
+  background: #463d25;
+  border-color: #241e0e;
+  box-shadow: inset 3px 0 0 #ffd257, inset 0 1px 0 rgba(255,255,255,.08);
+}
+.version-grid li.current > span {
+  color: #ffd257;
+  background: #201c12;
+  border-color: #8f742e;
+}
+.version-grid li.final-minecraft {
+  border-color: #337d8c;
+  box-shadow: inset 3px 0 0 var(--mc-aqua), inset 0 0 0 1px rgba(85,217,238,.12);
+}
+.roadmap-panel__note {
+  margin-top: 16px;
+  padding: 11px 12px;
+  color: #bdbdc4;
+  text-align: left;
+  line-height: 1.55;
+  background: rgba(0,0,0,.22);
+  border-left: 3px solid #b18cf1;
+}
+.roadmap-panel__note strong { color: #d8c2ff; }
+
+@media (max-width: 1120px) and (min-width: 941px) {
+  .version-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-path { grid-template-columns: 1fr; }
+  .project-path__arrow { justify-self: center; transform: rotate(90deg); }
+}
+@media (max-width: 600px) {
+  .project-path { grid-template-columns: 1fr; }
+  .project-path__arrow { justify-self: center; transform: rotate(90deg); }
+  .version-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 370px) {
+  .version-grid { grid-template-columns: 1fr; }
+}
