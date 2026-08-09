@@ -2,7 +2,7 @@
 
 A compact coming-soon site for NeoCraft: a full Minecraft rewrite in Rust and WebAssembly.
 
-The homepage contains the project premise, current status, and the complete 43-release roadmap from Alpha 1.1.2_01 through Beta 1.8.1. The former detail-page URLs redirect to the matching section of the homepage.
+The homepage contains the project premise, current status, and the complete 43-release roadmap from Alpha 1.1.2_01 through Beta 1.8.1. Dedicated pages provide project background, development updates, newsletter signup, contact options, and the privacy policy. Former detail-page URLs redirect to the matching section of the homepage.
 
 ## Current roadmap
 
@@ -23,4 +23,4 @@ No public build or release date is currently announced.
 
 The email form on `signup.html` becomes active when its `data-newsletter-endpoint` is set to the embed-subscribe address from the chosen newsletter service.
 
-After deployment, set Buttondown's subscription confirmation redirect URL to `https://aesyeotheslayer.github.io/Neocraft.App/confirmed.html` so confirmed subscribers return to the branded NeoCraft confirmation page.
+Buttondown's subscription confirmation redirect URL should be set to `https://neocraft.app/confirmed.html` so confirmed subscribers return to the branded NeoCraft confirmation page.

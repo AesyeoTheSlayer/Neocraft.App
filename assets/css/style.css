@@ -1357,3 +1357,35 @@ body::before {
   .update-card { grid-template-columns: 1fr; gap: 10px; padding: 20px; }
   .signup-panel, .post-body { padding: 22px; }
 }
+
+/* Project, privacy, and contact pages. */
+.info-shell { max-width: 930px; margin-inline: auto; }
+.info-card {
+  padding: clamp(25px, 5vw, 46px);
+  background: #2c2c33;
+  border: 3px solid #08080a;
+  box-shadow: inset 3px 3px 0 rgba(255,255,255,.11), inset -3px -3px 0 rgba(0,0,0,.48), 8px 8px 0 rgba(0,0,0,.28);
+}
+.info-card + .info-card { margin-top: 18px; }
+.info-card h2 { margin-top: 32px; font-size: 1.08rem; }
+.info-card h2:first-child { margin-top: 0; }
+.info-card h3 { margin-top: 24px; font-size: .9rem; }
+.info-card p, .info-card li { font-size: .82rem; line-height: 1.8; }
+.info-card ul { margin: 0 0 1.2rem; padding-left: 22px; color: var(--ink-2); }
+.info-card li + li { margin-top: 7px; }
+.info-card li::marker { color: var(--mc-green); }
+.info-meta { margin: -4px 0 24px; color: var(--ink-3); font-size: .65rem; }
+.info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
+.info-tile { padding: 19px; background: #232328; border: 2px solid #08080a; box-shadow: inset 2px 2px 0 rgba(255,255,255,.08); }
+.info-tile__number { display: block; margin-bottom: 9px; color: var(--mc-aqua); font-size: .62rem; }
+.info-tile h3 { margin: 0 0 7px; font-size: .82rem; }
+.info-tile p { margin: 0; color: var(--ink-3); font-size: .69rem; line-height: 1.65; }
+.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.contact-card { padding: 24px; background: #2c2c33; border: 3px solid #08080a; box-shadow: inset 3px 3px 0 rgba(255,255,255,.1), inset -3px -3px 0 rgba(0,0,0,.48); }
+.contact-card h2 { font-size: .98rem; }
+.contact-card p { font-size: .75rem; line-height: 1.7; }
+.contact-card .btn { margin-top: 7px; }
+.legal-note { padding: 13px 15px; color: #e6d5ae; font-size: .69rem; line-height: 1.65; background: #3b2d19; border-left: 4px solid var(--mc-gold); }
+@media (max-width: 760px) {
+  .info-grid, .contact-grid { grid-template-columns: 1fr; }
+}

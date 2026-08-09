@@ -10,6 +10,7 @@
     if (!root) return;
     var page = location.pathname.split('/').pop() || 'index.html';
     var onHome = page === 'index.html';
+    var onProject = page === 'project.html';
     var onUpdates = page === 'updates.html' || page.indexOf('update-') === 0;
     function current(active) { return active ? ' aria-current="page"' : ''; }
     root.innerHTML =
@@ -19,8 +20,10 @@
       '<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation"><span></span></button>' +
       '<nav class="nav__links" id="navlinks" aria-label="Main">' +
       '<a href="index.html"' + current(onHome) + '>Home</a>' +
+      '<a href="project.html"' + current(onProject) + '>Project</a>' +
       '<a href="updates.html"' + current(onUpdates) + '>Updates</a>' +
       '<a href="signup.html"' + current(page === 'signup.html' || page === 'confirmed.html') + '>Get updates</a>' +
+      '<a href="contact.html"' + current(page === 'contact.html') + '>Contact</a>' +
       '</nav>' +
       '</div></header>';
   }
@@ -31,7 +34,7 @@
     root.innerHTML =
       '<footer class="footer"><div class="wrap"><div class="footer__bottom">' +
       '<p class="footer__legal mb-0">NeoCraft is an independent, unofficial project. It is not affiliated with or endorsed by Mojang Studios or Microsoft.</p>' +
-      '<nav class="footer__links" aria-label="Footer"><a href="updates.html">Updates</a><a href="signup.html">Get updates</a></nav>' +
+      '<nav class="footer__links" aria-label="Footer"><a href="project.html">Project</a><a href="updates.html">Updates</a><a href="signup.html">Get updates</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav>' +
       '</div></div></footer>';
   }
 
