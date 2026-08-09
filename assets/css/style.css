@@ -600,11 +600,11 @@ caption { color: var(--ink-3); }
   .roadmap-panel__note { text-align: left; }
 }
 
-/* Original Minecraft block textures from the locally installed game assets. */
+/* CC0 block textures from ARoachIFoundOnMyPillow's 16x16 Block Texture Set. */
 :root {
-  --tex-dirt: url("../img/minecraft/dirt.png");
-  --tex-grass: url("../img/minecraft/grass_block_top.png");
-  --tex-obsidian: url("../img/minecraft/obsidian.png");
+  --tex-dirt: url("../img/blocks/dirt.png");
+  --tex-grass: url("../img/blocks/grass_block_top.png");
+  --tex-obsidian: url("../img/blocks/obsidian.png");
 }
 .project-section::before {
   height: 12px;
@@ -905,8 +905,8 @@ body::before {
 
 /* Cleaner block palette: deepslate page, polished deepslate chrome. */
 :root {
-  --tex-deepslate: url("../img/minecraft/deepslate_tiles.png");
-  --tex-stone: url("../img/minecraft/polished_deepslate.png");
+  --tex-deepslate: url("../img/blocks/deepslate_tiles.png");
+  --tex-stone: url("../img/blocks/polished_deepslate.png");
 }
 body::before {
   background-color: #17171b;
@@ -1388,4 +1388,54 @@ body::before {
 .legal-note { padding: 13px 15px; color: #e6d5ae; font-size: .69rem; line-height: 1.65; background: #3b2d19; border-left: 4px solid var(--mc-gold); }
 @media (max-width: 760px) {
   .info-grid, .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Footer alignment: legal copy stays left while navigation forms a clean right rail. */
+.footer__bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  justify-content: initial;
+  gap: 18px 40px;
+}
+.footer__legal { max-width: 62ch; }
+.footer__links {
+  justify-content: flex-end;
+  gap: 0;
+}
+.footer__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 11px;
+  text-decoration: none;
+  border-left: 1px solid rgba(255,255,255,.12);
+}
+.footer__links a:first-child { border-left: 0; }
+.footer__links a:last-child { padding-right: 0; }
+
+@media (max-width: 760px) {
+  .footer__bottom {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+  .footer__legal { max-width: 68ch; }
+  .footer__links { justify-content: center; }
+  .footer__links a:last-child { padding-right: 11px; }
+}
+
+@media (max-width: 520px) {
+  .footer__links {
+    width: min(100%, 330px);
+    row-gap: 4px;
+  }
+  .footer__links a {
+    flex: 0 1 31%;
+    justify-content: center;
+    padding-inline: 5px;
+    border-left: 0;
+  }
+  .footer__links a:last-child { padding-right: 5px; }
 }

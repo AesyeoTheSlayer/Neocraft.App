@@ -1,5 +1,20 @@
 # Third-party notices
 
+## CC0 block textures
+
+The block textures in `assets/img/blocks/` are sourced from
+[ARoachIFoundOnMyPillow's 16x16 Block Texture Set](https://opengameart.org/content/16x16-block-texture-set)
+on OpenGameArt.org. The source pack is released under
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The files were mapped for the website as follows:
+
+- `dirt.png` from `dirt.png`
+- `grass_block_top.png` from `grass_top.png`
+- `obsidian.png` from `obsidian.png`
+- `deepslate_tiles.png` from `slate_tiles.png`
+- `polished_deepslate.png` from `slate.png`
+
 ## Title-seed panorama recreation
 
 The high-resolution title panorama images in
