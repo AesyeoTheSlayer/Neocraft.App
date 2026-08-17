@@ -33,7 +33,7 @@
     if (!root) return;
     root.innerHTML =
       '<footer class="footer"><div class="wrap"><div class="footer__bottom">' +
-      '<p class="footer__legal mb-0">NeoCraft is an independent, unofficial project. It is not affiliated with or endorsed by Mojang Studios or Microsoft.</p>' +
+      '<p class="footer__legal mb-0">Not an official Minecraft product. NeoCraft is not approved by or associated with Mojang Studios or Microsoft.</p>' +
       '<nav class="footer__links" aria-label="Footer"><a href="project.html">Project</a><a href="updates.html">Updates</a><a href="signup.html">Get updates</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav>' +
       '</div></div></footer>';
   }

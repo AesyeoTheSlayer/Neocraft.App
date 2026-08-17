@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About the project — NeoCraft</title>
-  <meta name="description" content="Learn what NeoCraft is, why it is being rewritten in Rust and WebAssembly, and how its version roadmap works.">
+  <meta name="description" content="Learn about NeoCraft, an independent Rust-based Minecraft client for modern web browsers, and its current development roadmap.">
   <meta property="og:title" content="About the NeoCraft project">
-  <meta property="og:description" content="A full Minecraft rewrite in Rust and WebAssembly, built one classic version at a time.">
+  <meta property="og:description" content="An independent Rust-based Minecraft client designed for modern web browsers with WebAssembly.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0d12">
   <link rel="canonical" href="https://neocraft.app/project.html">
@@ -21,25 +21,25 @@
       <header class="page-intro reveal">
         <span class="eyebrow">The project</span>
         <h1>What is NeoCraft?</h1>
-        <p>NeoCraft is an independent attempt to faithfully rebuild classic Minecraft clients in Rust and run them directly in modern web browsers through WebAssembly.</p>
+        <p>NeoCraft is an independent Rust-based Minecraft client designed to run in modern web browsers through WebAssembly.</p>
       </header>
 
       <article class="info-card reveal">
-        <h2>A rewrite, not a wrapper</h2>
-        <p>NeoCraft is being written as its own Rust codebase. It does not place the original Java client inside a webpage. Game systems, rendering, input, world behavior, and version-specific mechanics must be recreated for the browser-focused engine.</p>
+        <h2>An independent client implementation</h2>
+        <p>NeoCraft is developed as its own Rust and WebAssembly client. It does not place or redistribute the original Java client inside a webpage. Its browser runtime, rendering, input, and version-support systems are developed independently.</p>
 
         <div class="info-grid" aria-label="Project foundations">
           <div class="info-tile"><span class="info-tile__number">01</span><h3>Rust engine</h3><p>A purpose-built codebase focused on reliability, performance, and maintainability.</p></div>
           <div class="info-tile"><span class="info-tile__number">02</span><h3>WebAssembly runtime</h3><p>Compiled for modern browsers so NeoCraft can run without a traditional Java client installation.</p></div>
-          <div class="info-tile"><span class="info-tile__number">03</span><h3>Version accuracy</h3><p>Each target is treated as its own historical release with the mechanics and feel associated with that version.</p></div>
+          <div class="info-tile"><span class="info-tile__number">03</span><h3>Version support</h3><p>Development targets selected historical Java Edition versions as separate compatibility goals.</p></div>
         </div>
 
-        <h2>Why rebuild the classic versions?</h2>
-        <p>Minecraft changed rapidly during Alpha and Beta. Mechanics, terrain, interfaces, bugs, balance, and the general feel of the game shifted between releases. NeoCraft’s roadmap preserves those versions as distinct targets instead of blending the entire era into one approximation.</p>
-        <p>The current target is Alpha 1.1.2_01. The public roadmap then moves through the listed Alpha and Beta client releases in order, with Beta 1.8.1 currently being the latest listed target. Later versions are still being considered.</p>
+        <h2>Why target historical versions?</h2>
+        <p>Minecraft changed rapidly during Alpha and Beta. Mechanics, terrain, interfaces, bugs, and balance shifted between releases, so NeoCraft lists individual versions as separate compatibility targets.</p>
+        <p>The current target is Alpha 1.1.2_01. The public roadmap lists additional Alpha and Beta versions under consideration, with Beta 1.8.1 currently being the latest listed target.</p>
 
         <h2>Ownership and authentication</h2>
-        <p>Every listed Minecraft release is planned to require signing in with a Microsoft account that owns Minecraft: Java Edition. NeoCraft is not intended to replace purchasing the original game.</p>
+        <p>Planned access requires signing in with a Microsoft account that owns Minecraft: Java Edition. Microsoft sign-in would be used for authentication and ownership verification; NeoCraft will never ask users to provide their Microsoft password directly.</p>
 
         <h2>Current status</h2>
         <p>NeoCraft is still in development. There is no public build and no announced release date. Development posts will focus on concrete progress rather than fictional schedules or completion percentages.</p>
@@ -47,7 +47,7 @@
         <h2>A roadmap, not a promise</h2>
         <p>The version list represents the current direction of the project. Included versions, their order, release plans, technical decisions, and account requirements can change at any time as development continues.</p>
 
-        <p class="legal-note"><strong>Unofficial project:</strong> NeoCraft is independent and is not affiliated with, endorsed by, or sponsored by Mojang Studios or Microsoft.</p>
+        <p class="legal-note"><strong>Not an official Minecraft product.</strong> NeoCraft is independently developed and is not approved by, associated with, endorsed by, or sponsored by Mojang Studios or Microsoft.</p>
 
         <div class="page-actions">
           <a class="btn btn--primary" href="index.html#roadmap">View the roadmap</a>
@@ -57,6 +57,6 @@
     </div>
   </main>
   <div data-site-footer></div>
-  <script src="assets/js/main.js?v=11"></script>
+  <script src="assets/js/main.js?v=12"></script>
 </body>
 </html>

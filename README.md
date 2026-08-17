@@ -1,15 +1,15 @@
 # NeoCraft website
 
-A compact coming-soon site for NeoCraft: a full Minecraft rewrite in Rust and WebAssembly.
+A compact coming-soon site for NeoCraft, an independent Rust-based Minecraft client designed for modern browsers with WebAssembly.
 
 The homepage contains the project premise, current status, and the complete 43-release roadmap from Alpha 1.1.2_01 through Beta 1.8.1. Dedicated pages provide project background, development updates, newsletter signup, contact options, and the privacy policy. Former detail-page URLs redirect to the matching section of the homepage.
 
 ## Current roadmap
 
 - Alpha 1.1.2_01 is in development.
-- Every historical client release through Beta 1.8.1 is planned, in order.
+- Selected historical Java Edition versions through Beta 1.8.1 are listed as non-final development targets.
 - Additional versions after Beta 1.8.1 are being considered.
-- All listed releases require a Microsoft account that owns Minecraft: Java Edition.
+- Planned access requires a Microsoft account that owns Minecraft: Java Edition.
 
 The entire roadmap—including its versions, order, release plans, and account requirements—can change at any time.
 

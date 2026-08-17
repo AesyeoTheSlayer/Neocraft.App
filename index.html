@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NeoCraft — Minecraft rewritten in Rust and WebAssembly</title>
-  <meta name="description" content="NeoCraft is a full Minecraft rewrite in Rust and WebAssembly. Alpha 1.1.2_01 is in development.">
-  <meta property="og:title" content="NeoCraft — Minecraft rewritten in Rust and WebAssembly">
-  <meta property="og:description" content="NeoCraft’s current, non-final plan: Minecraft client releases from Alpha 1.1.2_01 through Beta 1.8.1, rewritten in Rust and WebAssembly.">
+  <title>NeoCraft — Rust-based Minecraft client for the browser</title>
+  <meta name="description" content="NeoCraft is an independent Rust-based Minecraft client designed for modern web browsers with WebAssembly. Alpha 1.1.2_01 is in development.">
+  <meta property="og:title" content="NeoCraft — Rust-based Minecraft client for the browser">
+  <meta property="og:description" content="NeoCraft is an independent browser client built with Rust and WebAssembly, with planned support for selected Minecraft: Java Edition versions.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0d12">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -19,12 +19,12 @@
     <section class="title-screen">
       <div class="title-screen__bg" aria-hidden="true"><canvas class="title-panorama" data-beta-panorama></canvas></div>
       <div class="title-screen__inner">
-        <h1 class="visually-hidden">NeoCraft — Minecraft rewritten in Rust and WebAssembly</h1>
+        <h1 class="visually-hidden">NeoCraft — Rust-based Minecraft client for the browser</h1>
         <div class="title-screen__logo">
           <img src="assets/img/neocraft-title.png" alt="NeoCraft" width="1003" height="189" fetchpriority="high">
           <span class="splash">Rust + WebAssembly!</span>
         </div>
-        <p class="title-screen__tagline">The best browser-based Minecraft experience</p>
+        <p class="title-screen__tagline">A Rust-based Minecraft client for the browser</p>
         <nav class="mc-menu" aria-label="Page menu">
           <a class="btn btn--primary" href="#about">What is NeoCraft?</a>
           <a class="btn btn--ghost" href="updates.html">Development Updates</a>
@@ -32,7 +32,7 @@
         </nav>
       </div>
       <span class="title-screen__version">Current target: Alpha 1.1.2_01 · in development</span>
-      <span class="title-screen__legal">Unofficial project. Not affiliated with Mojang or Microsoft.</span>
+      <span class="title-screen__legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
     </section>
 
     <section class="project-section" id="about">
@@ -41,20 +41,20 @@
           <div class="project-layout">
             <article class="project-summary">
               <span class="eyebrow">The project</span>
-              <h2>Minecraft, rewritten from scratch.</h2>
-              <p class="project-summary__lead">NeoCraft is a full 1:1 rewrite of Minecraft in Rust, compiled to WebAssembly for a smooth, low-lag browser experience. It will recreate every client release from Alpha 1.1.2_01 through Beta 1.8.1.</p>
+              <h2>A Rust-based Minecraft client for the browser.</h2>
+              <p class="project-summary__lead">NeoCraft is an independent client built with Rust and WebAssembly. Development currently focuses on support for selected historical Minecraft: Java Edition versions, beginning with Alpha 1.1.2_01.</p>
 
               <div class="project-points" aria-label="Project principles">
-                <div class="project-point"><span>01</span><div><h3>Rust engine</h3><p>Its own codebase—not a Java wrapper.</p></div></div>
-                <div class="project-point"><span>02</span><div><h3>Browser runtime</h3><p>Compiled to WebAssembly.</p></div></div>
-                <div class="project-point"><span>03</span><div><h3>Every classic release</h3><p>Each target keeps its original mechanics and feel.</p></div></div>
+                <div class="project-point"><span>01</span><div><h3>Rust-based client</h3><p>Developed as an independent client implementation.</p></div></div>
+                <div class="project-point"><span>02</span><div><h3>Browser runtime</h3><p>Built with WebAssembly for modern browsers.</p></div></div>
+                <div class="project-point"><span>03</span><div><h3>Version targets</h3><p>Support is planned around specific historical Java Edition versions.</p></div></div>
               </div>
 
               <div class="project-auth" aria-label="Account requirement">
                 <span class="microsoft-logo" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
                 <div>
                   <strong>Minecraft: Java Edition ownership required</strong>
-                  <p>Every listed release requires signing in with a Microsoft account that owns Minecraft: Java Edition.</p>
+                  <p>Planned access requires a Microsoft account that owns Minecraft: Java Edition.</p>
                 </div>
               </div>
 
@@ -141,7 +141,7 @@
     </section>
   </main>
   <div data-site-footer></div>
-  <script src="assets/js/main.js?v=11"></script>
+  <script src="assets/js/main.js?v=12"></script>
   <script type="module" src="assets/js/panorama.js?v=26"></script>
 </body>
 </html>
