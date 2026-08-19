@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeoCraft Development Update #1 — It’s Playable</title>
+  <meta name="description" content="NeoCraft is now a playable Rust-based Minecraft client in the browser. Here is what works, how it is verified, and what remains before release.">
+  <meta property="og:title" content="NeoCraft Development Update #1 — It’s Playable">
+  <meta property="og:description" content="NeoCraft can now create, load, play, and save Alpha 1.1.2_01 worlds directly in the browser.">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-08-19">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="canonical" href="https://neocraft.app/update-playable-2026-08.html">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="NeoCraft development updates" href="updates.xml">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=35">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main" class="content-page">
+    <article class="wrap post-shell">
+      <a class="post-back" href="updates.html">← All updates</a>
+      <header class="post-head reveal">
+        <div class="post-head__meta"><span class="badge badge--diamond">Development update</span><time datetime="2026-08-19">August 19, 2026</time></div>
+        <h1>NeoCraft Development Update #1 — It’s Playable</h1>
+        <p class="lede">NeoCraft has moved beyond an idea and become an actual playable client.</p>
+      </header>
+
+      <div class="post-body reveal">
+        <h2>Where the project is now</h2>
+        <p>The current build can load the original Alpha 1.1.2_01 resources locally, reach the main menu, create and load worlds, save progress, and run normal gameplay in the browser.</p>
+
+        <p>A large portion of the original client is working, including:</p>
+        <ul>
+          <li>Original-style world generation, chunk loading, lighting, weather and time</li>
+          <li>Player movement, swimming, jumping, collision and camera controls</li>
+          <li>Mining, block placement, tools, combat and item use</li>
+          <li>Inventory, crafting, furnaces, chests and containers</li>
+          <li>Mobs, animals, dropped items, particles, paintings, boats and minecarts</li>
+          <li>The HUD, menus, chat, options and pause screens</li>
+          <li>First-person hands, held items, fire, water and inside-block overlays</li>
+          <li>Music, sound effects and records when local Alpha resources are supplied</li>
+          <li>Singleplayer world persistence through browser storage</li>
+        </ul>
+
+        <h2>How much of it is actually Rust?</h2>
+        <p>All authored game logic is written in Rust. The current browser build is approximately 96% compiled Rust WebAssembly by file size.</p>
+
+        <p>The remaining few percent consists of automatically generated browser-loading code and a very small HTML/CSS shell. There is no handwritten JavaScript gameplay implementation hiding outside the Rust client.</p>
+
+        <h2>Verification and accuracy</h2>
+        <p>The original Alpha client contained 396 classes considered part of the playable client. Every one of those classes is now accounted for through a Rust implementation, an exact browser replacement, or an explicitly documented unreachable desktop-only path.</p>
+
+        <p>The project currently tracks 2,335 original method declarations across those classes. The automated test suite has grown to 2,047 passing tests, covering gameplay behavior, world logic, rendering, networking, saves, input, timing and many of Alpha’s stranger edge cases.</p>
+
+        <p>Release builds are also generated twice and compared byte-for-byte before publication. The current optimized game module is just under 2 MB.</p>
+
+        <h2>How close is NeoCraft to being finished?</h2>
+        <p>I would currently place the first version of NeoCraft at roughly <strong>85–90% complete overall</strong>.</p>
+
+        <p>The core client implementation itself is further along than that. There is no longer a major gameplay system waiting to be built from scratch. The remaining work is mostly the difficult final stretch: finding behavior that only appears during unusual situations, testing longer sessions, polishing the browser experience and continuing to reduce memory and rendering overhead.</p>
+
+        <p>It is already playable, but “playable” and “finished” are not the same thing. A finished build needs to remain reliable across different computers, browsers, worlds, saves and multiplayer servers—not only during controlled tests.</p>
+
+        <h2>What is left</h2>
+        <p>The largest remaining areas are:</p>
+        <ul>
+          <li>Longer singleplayer testing across more seeds, large worlds and unusual saves</li>
+          <li>Real low-end-device testing and further memory, startup and frame-time optimization</li>
+          <li>Wider browser testing, including browser-specific input and WebGL behavior</li>
+          <li>Additional verification of rare entities, block interactions and unusual Java edge cases</li>
+          <li>Final setup, error handling, save-management and resource-loading polish</li>
+          <li>More visual and timing comparisons against the original Alpha client</li>
+          <li>Packaging, documentation and a smoother public testing process</li>
+        </ul>
+
+        <p>Optimization will continue throughout this work. Recent changes have been removing redundant render state, avoiding per-frame allocations and shrinking the browser build without changing what is drawn.</p>
+
+        <h2>Release timing</h2>
+        <p>There is not a firm release date yet. The remaining work is much less about building missing foundations and much more about proving that everything already built holds together under real play. I do not want to rush the final part just to call it finished early.</p>
+
+        <p>The next updates will focus on testing results, compatibility, performance improvements and any remaining differences found during normal gameplay.</p>
+
+        <div class="page-actions">
+          <a class="btn btn--primary" href="signup.html">Get future updates</a>
+          <a class="btn btn--ghost" href="index.html#about">Learn about NeoCraft</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=12"></script>
+</body>
+</html>

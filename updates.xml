@@ -5,7 +5,14 @@
     <link>https://neocraft.app/updates.html</link>
     <description>Development news, roadmap changes, and progress reports from NeoCraft.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>NeoCraft Development Update #1 — It’s Playable</title>
+      <link>https://neocraft.app/update-playable-2026-08.html</link>
+      <guid isPermaLink="true">https://neocraft.app/update-playable-2026-08.html</guid>
+      <pubDate>Wed, 19 Aug 2026 12:00:00 GMT</pubDate>
+      <description>NeoCraft is now playable in the browser. See what works, how the client is verified, and what remains before release.</description>
+    </item>
     <item>
       <title>Welcome to the NeoCraft development log</title>
       <link>https://neocraft.app/update-welcome-2026-08.html</link>
