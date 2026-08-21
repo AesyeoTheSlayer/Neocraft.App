@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
   <title>Get NeoCraft updates</title>
-  <meta name="description" content="Sign up for major NeoCraft development updates and release announcements.">
+  <meta name="description" content="Sign up for NeoCraft alpha-testing news, major development updates, and release announcements.">
   <meta property="og:title" content="Get NeoCraft updates">
-  <meta property="og:description" content="Receive major NeoCraft development updates and release announcements.">
+  <meta property="og:description" content="Receive NeoCraft alpha-testing news, major development updates, and release announcements.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0d12">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/font.css?v=25">
-  <link rel="stylesheet" href="assets/css/style.css?v=35">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
 </head>
 <body>
   <div data-site-header></div>
@@ -20,7 +21,7 @@
       <header class="page-intro reveal">
         <span class="eyebrow eyebrow--gold">Newsletter</span>
         <h1>Get NeoCraft updates</h1>
-        <p>Be notified about major development progress, public builds, and important roadmap changes.</p>
+        <p>Be notified about test access changes, major development progress, public builds, and important roadmap decisions.</p>
       </header>
 
       <div class="signup-layout">
@@ -28,6 +29,7 @@
           <h2 id="signup-expect-title">Only the important stuff.</h2>
           <p>This list is for meaningful project news—not constant notifications.</p>
           <ul class="signup-list">
+            <li>Alpha test access and build announcements</li>
             <li>Major development progress</li>
             <li>Public build and release announcements</li>
             <li>Important roadmap changes</li>
@@ -38,14 +40,14 @@
 
         <section class="signup-panel reveal" aria-labelledby="signup-form-title">
           <h2 id="signup-form-title">Join the update list</h2>
-          <form class="newsletter-form" data-newsletter-form data-newsletter-endpoint="https://buttondown.com/api/emails/embed-subscribe/neocraftupdates" method="post" target="newsletter-response">
+          <form class="newsletter-form" data-newsletter-form data-newsletter-endpoint="https://buttondown.com/api/emails/embed-subscribe/neocraftupdates" action="https://buttondown.com/api/emails/embed-subscribe/neocraftupdates" method="post" target="newsletter-response">
             <div class="field">
               <label for="subscriber-email">Email address</label>
-              <input class="input" id="subscriber-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required disabled>
+              <input class="input" id="subscriber-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
             </div>
             <input type="hidden" name="embed" value="1">
-            <button class="btn btn--primary" type="submit" disabled>Sign up for updates</button>
-            <p class="newsletter-status" data-newsletter-status aria-live="polite" tabindex="-1">Email signup is being connected. The RSS feed is available now.</p>
+            <button class="btn btn--primary" type="submit">Sign up for updates</button>
+            <p class="newsletter-status" data-newsletter-status aria-live="polite" tabindex="-1">A confirmation email will be sent after you sign up.</p>
             <p class="newsletter-privacy">Your address will only be used for NeoCraft project updates. Buttondown handles confirmation and unsubscribing. See the <a href="privacy.html">Privacy Policy</a>.</p>
           </form>
           <iframe class="newsletter-response-frame" name="newsletter-response" title="Newsletter signup response"></iframe>
@@ -54,7 +56,7 @@
     </div>
   </main>
   <div data-site-footer></div>
-  <script src="assets/js/main.js?v=12"></script>
-  <script src="assets/js/newsletter.js?v=1"></script>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/newsletter.js?v=2"></script>
 </body>
 </html>

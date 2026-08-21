@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>Alpha testing — NeoCraft</title>
+  <meta name="description" content="NeoCraft has entered public alpha testing. Learn what is available, launch the test build, and report problems.">
+  <meta property="og:title" content="NeoCraft alpha testing is beginning">
+  <meta property="og:description" content="The Alpha 1.1.2_01 browser client is playable and entering real-world testing.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="canonical" href="https://neocraft.app/testing.html">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main" class="content-page testing-page">
+    <div class="wrap testing-shell">
+      <header class="page-intro reveal">
+        <span class="eyebrow eyebrow--diamond">Alpha test program</span>
+        <h1>NeoCraft is entering testing.</h1>
+        <p>The Alpha 1.1.2_01 client is playable. Testing now moves beyond controlled development checks and into real browsers, real computers, longer sessions, and stranger worlds.</p>
+        <div class="page-actions">
+          <button class="btn btn--primary" type="button" data-test-disclaimer-open data-client-href="client.html">Launch the Test Build</button>
+          <a class="btn btn--ghost" href="update-playable-2026-08.html">Read Development Update #1</a>
+        </div>
+      </header>
+
+      <section class="info-card test-status-card reveal" id="access" aria-labelledby="test-status-title">
+        <div class="test-card-heading">
+          <div><span class="eyebrow eyebrow--gold">Access status</span><h2 id="test-status-title">Public testing is open.</h2></div>
+          <span class="test-status-badge"><i></i>Active phase</span>
+        </div>
+        <p>The Alpha test client is available directly from NeoCraft. No application or tester approval is required, but everyone must acknowledge that the build is unfinished before opening it.</p>
+        <dl class="test-status-grid">
+          <div><dt>Build</dt><dd>Playable</dd></div>
+          <div><dt>Target</dt><dd>Alpha 1.1.2_01</dd></div>
+          <div><dt>Stage</dt><dd>Early testing</dd></div>
+          <div><dt>Access</dt><dd>Public test build</dd></div>
+        </dl>
+        <p class="test-build-note">Expect bugs, unfinished setup, build changes, and occasional save incompatibility.</p>
+      </section>
+
+      <article class="info-card reveal">
+        <h2>Before you test</h2>
+        <p>This is a real pre-release build, not a finished public release. Testers should be comfortable encountering bugs and sharing useful details when something goes wrong.</p>
+
+        <div class="test-requirements-grid" role="list" aria-label="Testing requirements">
+          <div class="info-tile"><span class="info-tile__number">01</span><h3>Own Java Edition</h3><p>You need a Microsoft account that owns Minecraft: Java Edition. Never send NeoCraft your password or authentication codes.</p></div>
+          <div class="info-tile"><span class="info-tile__number">02</span><h3>Supply local resources</h3><p>NeoCraft does not distribute Minecraft game assets. The test build loads supported Alpha resources supplied locally by the tester.</p></div>
+          <div class="info-tile"><span class="info-tile__number">03</span><h3>Use a modern browser</h3><p>Start with an up-to-date desktop browser and working WebGL support. Wider browser and low-end-device testing is part of this phase.</p></div>
+          <div class="info-tile"><span class="info-tile__number">04</span><h3>Expect change</h3><p>Builds, setup steps, storage formats, compatibility, and access details may change while testing continues.</p></div>
+        </div>
+
+        <div class="testing-columns">
+          <section class="test-section">
+            <span class="eyebrow eyebrow--diamond">Testing priorities</span>
+            <h2>What needs real playtime</h2>
+            <ul class="test-checklist">
+              <li><span></span>Creating, loading, saving, and revisiting worlds</li>
+              <li><span></span>Long sessions across different seeds and world sizes</li>
+              <li><span></span>Movement, mining, crafting, combat, and containers</li>
+              <li><span></span>Mobs, weather, lighting, particles, audio, and vehicles</li>
+              <li><span></span>Performance on older or lower-powered hardware</li>
+              <li><span></span>Browser-specific input, rendering, and WebGL behavior</li>
+              <li><span></span>Rare interactions and unusual Alpha edge cases</li>
+            </ul>
+          </section>
+
+          <section class="test-section test-section--warning">
+            <span class="eyebrow eyebrow--gold">Protect your worlds</span>
+            <h2>Treat every build as temporary</h2>
+            <p>Test worlds are stored in browser storage. Browser data can be cleared, storage formats can change, and a test build can fail.</p>
+            <ul>
+              <li>Do not use the test build as the only copy of anything important.</li>
+              <li>Keep notes about the build you used when reporting save problems.</li>
+              <li>Do not assume a world will remain compatible with every later test.</li>
+            </ul>
+          </section>
+        </div>
+
+        <p class="legal-note"><strong>Keep account information private.</strong> Never include passwords, Microsoft authentication codes, session tokens, or private account data in a test report.</p>
+      </article>
+
+      <section class="info-card bug-report reveal" id="reporting">
+        <div class="bug-report__intro">
+          <span class="eyebrow eyebrow--gold">Bug reports</span>
+          <h2>A useful report can save hours.</h2>
+          <p>Use the issue tracker for reproducible bugs, compatibility problems, performance issues, account problems, and website errors. One issue per report is ideal.</p>
+          <a class="btn btn--primary" href="report.html">Report a test issue</a>
+        </div>
+        <div class="report-template" role="region" aria-label="Suggested bug report format">
+          <div class="report-template__head">REPORT.TXT</div>
+          <pre>BUILD:
+BROWSER + VERSION:
+OPERATING SYSTEM / DEVICE:
+
+WHAT HAPPENED:
+
+STEPS TO REPRODUCE:
+1.
+2.
+3.
+
+WHAT YOU EXPECTED:
+
+SCREENSHOT OR LOGS:</pre>
+        </div>
+      </section>
+
+      <div class="testing-follow reveal">
+        <div><span class="eyebrow eyebrow--diamond">Follow the test phase</span><h2>Build notes and access changes will be announced.</h2></div>
+        <div class="page-actions"><a class="btn btn--primary" href="signup.html">Get email updates</a><a class="btn btn--ghost" href="updates.html">Development log</a></div>
+      </div>
+    </div>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/client-disclaimer.js?v=1"></script>
+</body>
+</html>

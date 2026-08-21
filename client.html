@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>Alpha test client — NeoCraft</title>
+  <meta name="description" content="Public NeoCraft Alpha 1.1.2_01 browser test client.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body class="client-page" data-require-test-ack>
+  <div data-site-header></div>
+  <main id="main" class="client-main">
+    <div class="wrap client-shell">
+      <header class="client-heading">
+        <div>
+          <span class="eyebrow eyebrow--diamond">Public test build</span>
+          <h1>NeoCraft Alpha Client</h1>
+          <p>Test build <strong>0.1.0-alpha.1</strong> · Targeting Alpha 1.1.2_01</p>
+        </div>
+        <span class="client-build-status"><i aria-hidden="true"></i> Test build</span>
+      </header>
+
+      <section class="client-bug-callout" aria-labelledby="client-bug-title">
+        <span class="client-bug-callout__mark" aria-hidden="true">!</span>
+        <div>
+          <span class="eyebrow eyebrow--gold">Your job as a tester</span>
+          <h2 id="client-bug-title">Actively look for bugs—and report what you find.</h2>
+          <p>This is unfinished test software. Pay attention to crashes, broken saves, visual errors, incorrect behavior, input problems, and performance issues. Even small or strange problems are worth reporting.</p>
+        </div>
+        <a class="btn btn--primary" href="report.html">Report a bug</a>
+      </section>
+
+      <div data-client-content>
+      <section class="client-notice" aria-label="Test build warning">
+        <strong>Use disposable worlds.</strong>
+        <span>This build is unfinished. Saves may break or become incompatible between test versions.</span>
+      </section>
+
+      <section class="client-launch" data-client-setup aria-labelledby="client-launch-title">
+        <div class="client-launch__copy">
+          <span class="eyebrow eyebrow--gold">Local resource check</span>
+          <h2 id="client-launch-title">Prepare the client.</h2>
+          <p>Choose your legally obtained Minecraft Alpha 1.1.2_01 client JAR. NeoCraft verifies it locally, then opens directly to the title screen.</p>
+          <div class="client-local-note"><span aria-hidden="true">◆</span><p><strong>Your file stays on this device.</strong> It is read by the browser and is not uploaded to NeoCraft.</p></div>
+        </div>
+        <div class="client-launch__control">
+          <div class="client-launch__step"><span>01</span><div><strong>Minecraft Alpha client JAR</strong><small>Required · expected size 897,164 bytes</small></div></div>
+          <button class="btn btn--primary client-launch__button" type="button" data-client-choose-jar>Choose JAR and start</button>
+          <p class="client-launch__status" data-client-status role="status" aria-live="polite">Waiting for a compatible local JAR.</p>
+          <div class="client-launch__audio"><strong>Want original audio?</strong><span>Add your local resources folder from the client toolbar after startup.</span></div>
+        </div>
+      </section>
+
+      <section class="client-stage" data-client-stage hidden aria-label="NeoCraft browser client">
+        <div class="client-stage__bar">
+          <div class="client-stage__identity"><span class="client-stage__light" aria-hidden="true"></span><strong>CLIENT</strong><span>Alpha 1.1.2_01</span></div>
+          <div class="client-stage__actions">
+            <button type="button" data-client-audio>Add audio resources</button>
+            <button type="button" data-client-reload>Restart setup</button>
+          </div>
+        </div>
+        <div class="client-frame-wrap">
+          <iframe
+            class="client-frame"
+            data-client-frame
+            src="about:blank"
+            title="NeoCraft Alpha test client"
+            allow="autoplay; clipboard-write"
+            referrerpolicy="no-referrer"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="client-setup" aria-labelledby="client-setup-title">
+        <div class="client-setup__intro">
+          <span class="eyebrow eyebrow--gold">First test route</span>
+          <h2 id="client-setup-title">Make sure the basics hold together.</h2>
+          <p>Start with an ordinary disposable world and note exactly what you were doing if something breaks.</p>
+        </div>
+        <ol class="client-steps">
+          <li><span>01</span><div><strong>Create a test world</strong><p>Move far enough to load terrain, then mine, place, craft, and change a few settings.</p></div></li>
+          <li><span>02</span><div><strong>Save and leave</strong><p>Use “Save and quit to title” so the normal unload and persistence path is exercised.</p></div></li>
+          <li><span>03</span><div><strong>Open it again</strong><p>Confirm that the same world, player state, inventory, and nearby terrain return correctly.</p></div></li>
+        </ol>
+      </section>
+
+      <aside class="client-safety">
+        <div><strong>Keep your account private.</strong><p>Never share passwords, authentication codes, session tokens, your JAR, or private world files in a bug report.</p></div>
+        <div><strong>Your saves stay browser-local.</strong><p>Changing browser, profile, domain, or clearing site data creates a different storage area or removes the browser copy.</p></div>
+      </aside>
+      </div>
+    </div>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/client-disclaimer.js?v=1"></script>
+  <script src="assets/js/client-page.js?v=4"></script>
+</body>
+</html>

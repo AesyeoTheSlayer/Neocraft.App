@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>NeoCraft — Rust-based Minecraft client for the browser</title>
+  <meta name="description" content="NeoCraft is an independent Rust-based Minecraft client for modern browsers. The playable Alpha 1.1.2_01 build has entered testing.">
+  <meta property="og:title" content="NeoCraft — Rust-based Minecraft client for the browser">
+  <meta property="og:description" content="The Rust and WebAssembly Alpha 1.1.2_01 client is playable and entering real-world browser testing.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main">
+    <section class="title-screen">
+      <div class="title-screen__bg" aria-hidden="true"><canvas class="title-panorama" data-beta-panorama></canvas></div>
+      <div class="title-screen__inner">
+        <h1 class="visually-hidden">NeoCraft — Rust-based Minecraft client for the browser</h1>
+        <div class="title-screen__logo">
+          <img src="assets/img/neocraft-title.png" alt="NeoCraft" width="1003" height="189" fetchpriority="high">
+          <span class="splash">ALPHA TESTING!</span>
+        </div>
+        <p class="title-screen__tagline">A Rust-based Minecraft client for the browser</p>
+        <nav class="mc-menu" aria-label="Page menu">
+          <button class="btn btn--primary" type="button" data-test-disclaimer-open data-client-href="client.html">Play the Test Build</button>
+          <a class="btn btn--ghost" href="#about">What is NeoCraft?</a>
+          <a class="btn btn--ghost" href="updates.html">Development Updates</a>
+        </nav>
+      </div>
+      <span class="title-screen__version">Alpha 1.1.2_01 · testing phase</span>
+      <span class="title-screen__legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
+    </section>
+
+    <section class="testing-strip" aria-label="Testing announcement">
+      <div class="wrap testing-strip__inner">
+        <span class="testing-strip__pulse" aria-hidden="true"></span>
+        <div><strong>Alpha testing has begun.</strong><span>The first playable client is ready for real-world testing.</span></div>
+        <a href="testing.html">Testing details →</a>
+      </div>
+    </section>
+
+    <section class="project-section" id="about">
+      <div class="wrap">
+        <div class="project-board reveal">
+          <div class="project-layout">
+            <article class="project-summary">
+              <span class="eyebrow">The project</span>
+              <h2>A Rust-based Minecraft client for the browser.</h2>
+              <p class="project-summary__lead">NeoCraft is an independent client built with Rust and WebAssembly. Development currently focuses on support for selected historical Minecraft: Java Edition versions, beginning with Alpha 1.1.2_01.</p>
+
+              <div class="project-points" role="list" aria-label="Project principles">
+                <div class="project-point" role="listitem"><span>01</span><div><h3>Rust-based client</h3><p>Developed as an independent client implementation.</p></div></div>
+                <div class="project-point" role="listitem"><span>02</span><div><h3>Browser runtime</h3><p>Built with WebAssembly for modern browsers.</p></div></div>
+                <div class="project-point" role="listitem"><span>03</span><div><h3>Version targets</h3><p>Support is planned around specific historical Java Edition versions.</p></div></div>
+              </div>
+
+              <div class="project-auth" role="note" aria-label="Account requirement">
+                <span class="microsoft-logo" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <div>
+                  <strong>Minecraft: Java Edition ownership required</strong>
+                  <p>The test client requires legally obtained local Alpha resources. NeoCraft does not provide Minecraft game files.</p>
+                </div>
+              </div>
+
+              <div class="project-note project-note--testing" id="status"><span aria-hidden="true">✓</span><p><strong>Playable test build.</strong><br>Limited alpha testing is beginning now.</p></div>
+            </article>
+
+            <section class="roadmap-panel" id="roadmap" aria-labelledby="roadmap-title">
+              <div class="roadmap-panel__head">
+                <div><span class="eyebrow eyebrow--gold">Roadmap</span><h2 id="roadmap-title">Version targets</h2></div>
+                <span class="roadmap-count">43 releases</span>
+              </div>
+              <div class="roadmap-disclaimer" role="note" aria-label="Roadmap disclaimer">
+                <span class="roadmap-disclaimer__mark" aria-hidden="true">!</span>
+                <div>
+                  <strong>This entire roadmap can change at literally any time.</strong>
+                  <p>Nothing here is a final promise—including the included versions, their order, release plans, or account requirements.</p>
+                </div>
+              </div>
+              <div class="roadmap-legend" role="list" aria-label="Roadmap status key">
+                <span class="roadmap-legend__current">In testing</span>
+                <span class="roadmap-legend__planned">Planned</span>
+              </div>
+
+              <section class="version-era" aria-labelledby="alpha-era-title">
+                <div class="version-era__head"><h3 id="alpha-era-title">Alpha</h3><span>15 releases</span></div>
+                <ol class="version-grid">
+                  <li class="current"><span>01</span><div><strong>Alpha 1.1.2_01</strong><small>Testing now</small></div></li>
+                  <li><span>02</span><strong>Alpha 1.2.0</strong></li>
+                  <li><span>03</span><strong>Alpha 1.2.0_01</strong></li>
+                  <li><span>04</span><strong>Alpha 1.2.0_02</strong></li>
+                  <li><span>05</span><strong>Alpha 1.2.1</strong></li>
+                  <li><span>06</span><strong>Alpha 1.2.1_01</strong></li>
+                  <li><span>07</span><strong>Alpha 1.2.2</strong></li>
+                  <li><span>08</span><strong>Alpha 1.2.3</strong></li>
+                  <li><span>09</span><strong>Alpha 1.2.3_01</strong></li>
+                  <li><span>10</span><strong>Alpha 1.2.3_02</strong></li>
+                  <li><span>11</span><strong>Alpha 1.2.3_04</strong></li>
+                  <li><span>12</span><strong>Alpha 1.2.3_05</strong></li>
+                  <li><span>13</span><strong>Alpha 1.2.4_01</strong></li>
+                  <li><span>14</span><strong>Alpha 1.2.5</strong></li>
+                  <li><span>15</span><strong>Alpha 1.2.6</strong></li>
+                </ol>
+              </section>
+
+              <section class="version-era" aria-labelledby="beta-era-title">
+                <div class="version-era__head"><h3 id="beta-era-title">Beta</h3><span>28 releases</span></div>
+                <ol class="version-grid" start="16">
+                  <li><span>16</span><strong>Beta 1.0</strong></li>
+                  <li><span>17</span><strong>Beta 1.0_01</strong></li>
+                  <li><span>18</span><strong>Beta 1.0.2</strong></li>
+                  <li><span>19</span><strong>Beta 1.1</strong></li>
+                  <li><span>20</span><strong>Beta 1.1_01</strong></li>
+                  <li><span>21</span><strong>Beta 1.1_02</strong></li>
+                  <li><span>22</span><strong>Beta 1.2</strong></li>
+                  <li><span>23</span><strong>Beta 1.2_01</strong></li>
+                  <li><span>24</span><strong>Beta 1.2_02</strong></li>
+                  <li><span>25</span><strong>Beta 1.3</strong></li>
+                  <li><span>26</span><strong>Beta 1.3_01</strong></li>
+                  <li><span>27</span><strong>Beta 1.4</strong></li>
+                  <li><span>28</span><strong>Beta 1.4_01</strong></li>
+                  <li><span>29</span><strong>Beta 1.5</strong></li>
+                  <li><span>30</span><strong>Beta 1.5_01</strong></li>
+                  <li><span>31</span><strong>Beta 1.6</strong></li>
+                  <li><span>32</span><strong>Beta 1.6.1</strong></li>
+                  <li><span>33</span><strong>Beta 1.6.2</strong></li>
+                  <li><span>34</span><strong>Beta 1.6.3</strong></li>
+                  <li><span>35</span><strong>Beta 1.6.4</strong></li>
+                  <li><span>36</span><strong>Beta 1.6.5</strong></li>
+                  <li><span>37</span><strong>Beta 1.6.6</strong></li>
+                  <li><span>38</span><strong>Beta 1.7</strong></li>
+                  <li><span>39</span><strong>Beta 1.7_01</strong></li>
+                  <li><span>40</span><strong>Beta 1.7.2</strong></li>
+                  <li><span>41</span><strong>Beta 1.7.3</strong></li>
+                  <li><span>42</span><strong>Beta 1.8</strong></li>
+                  <li><span>43</span><strong>Beta 1.8.1</strong></li>
+                </ol>
+              </section>
+
+              <p class="roadmap-panel__note"><strong>Beta 1.8.1 is the latest listed target.</strong> Additional future versions are being considered. This roadmap is subject to change at any time.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/client-disclaimer.js?v=1"></script>
+  <script type="module" src="assets/js/panorama.js?v=26"></script>
+</body>
+</html>

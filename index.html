@@ -3,145 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NeoCraft — Rust-based Minecraft client for the browser</title>
-  <meta name="description" content="NeoCraft is an independent Rust-based Minecraft client designed for modern web browsers with WebAssembly. Alpha 1.1.2_01 is in development.">
-  <meta property="og:title" content="NeoCraft — Rust-based Minecraft client for the browser">
-  <meta property="og:description" content="NeoCraft is an independent browser client built with Rust and WebAssembly, with planned support for selected Minecraft: Java Edition versions.">
+  <title>NeoCraft — Under construction</title>
+  <meta name="description" content="NeoCraft is moving toward a substantial development milestone while a completely new website is being built.">
+  <meta property="og:title" content="NeoCraft — Under construction">
+  <meta property="og:description" content="Development is moving quickly. NeoCraft and its new website will return at a substantial milestone.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0a0d12">
+  <meta name="theme-color" content="#17171c">
+  <link rel="canonical" href="https://neocraft.app/">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/font.css?v=25">
-  <link rel="stylesheet" href="assets/css/style.css?v=35">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+  <link rel="stylesheet" href="assets/css/construction.css?v=2">
 </head>
-<body>
-  <div data-site-header></div>
-  <main id="main">
-    <section class="title-screen">
-      <div class="title-screen__bg" aria-hidden="true"><canvas class="title-panorama" data-beta-panorama></canvas></div>
-      <div class="title-screen__inner">
-        <h1 class="visually-hidden">NeoCraft — Rust-based Minecraft client for the browser</h1>
-        <div class="title-screen__logo">
-          <img src="assets/img/neocraft-title.png" alt="NeoCraft" width="1003" height="189" fetchpriority="high">
-          <span class="splash">Rust + WebAssembly!</span>
+<body class="construction-page">
+  <main class="construction-screen" id="main">
+    <header class="construction-bar">
+      <div class="construction-bar__inner">
+        <div class="construction-brand">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 2 30 9 16 16 2 9Z" fill="#5dd45d"/>
+            <path d="M2 9 16 16v14L2 23Z" fill="#6b4a2f"/>
+            <path d="M30 9 16 16v14l14-7Z" fill="#8a6440"/>
+          </svg>
+          <span class="brand__text">Neo<span>Craft</span></span>
+          <span class="brand__tag">Rust/WASM</span>
         </div>
-        <p class="title-screen__tagline">A Rust-based Minecraft client for the browser</p>
-        <nav class="mc-menu" aria-label="Page menu">
-          <a class="btn btn--primary" href="#about">What is NeoCraft?</a>
-          <a class="btn btn--ghost" href="updates.html">Development Updates</a>
-          <a class="btn btn--ghost" href="signup.html">Get Email Updates</a>
-        </nav>
+        <span class="construction-bar__status"><i aria-hidden="true"></i>Under construction</span>
       </div>
-      <span class="title-screen__version">Current target: Alpha 1.1.2_01 · in development</span>
-      <span class="title-screen__legal">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
-    </section>
+    </header>
 
-    <section class="project-section" id="about">
-      <div class="wrap">
-        <div class="project-board reveal">
-          <div class="project-layout">
-            <article class="project-summary">
-              <span class="eyebrow">The project</span>
-              <h2>A Rust-based Minecraft client for the browser.</h2>
-              <p class="project-summary__lead">NeoCraft is an independent client built with Rust and WebAssembly. Development currently focuses on support for selected historical Minecraft: Java Edition versions, beginning with Alpha 1.1.2_01.</p>
+    <div class="construction-wrap">
+      <section class="construction-copy" aria-labelledby="construction-title">
+        <span class="eyebrow eyebrow--gold">Temporary site status</span>
+        <img class="construction-logo" src="assets/img/neocraft-title.png" alt="NeoCraft" width="1003" height="189">
+        <h1 id="construction-title">The next phase is being built.</h1>
+        <p class="construction-lead">Development is moving much faster than expected. NeoCraft has already progressed to <strong>Alpha 1.2.6</strong>, and the project is closing in on a substantial milestone.</p>
+        <p>At the same time, a completely new NeoCraft website is being designed behind the scenes. The full site and public client access will return when the next phase is ready.</p>
+      </section>
 
-              <div class="project-points" aria-label="Project principles">
-                <div class="project-point"><span>01</span><div><h3>Rust-based client</h3><p>Developed as an independent client implementation.</p></div></div>
-                <div class="project-point"><span>02</span><div><h3>Browser runtime</h3><p>Built with WebAssembly for modern browsers.</p></div></div>
-                <div class="project-point"><span>03</span><div><h3>Version targets</h3><p>Support is planned around specific historical Java Edition versions.</p></div></div>
-              </div>
-
-              <div class="project-auth" aria-label="Account requirement">
-                <span class="microsoft-logo" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
-                <div>
-                  <strong>Minecraft: Java Edition ownership required</strong>
-                  <p>Planned access requires a Microsoft account that owns Minecraft: Java Edition.</p>
-                </div>
-              </div>
-
-              <div class="project-note" id="status"><span aria-hidden="true">!</span><p><strong>No public build yet.</strong><br>There is no announced release date.</p></div>
-            </article>
-
-            <section class="roadmap-panel" id="roadmap" aria-labelledby="roadmap-title">
-              <div class="roadmap-panel__head">
-                <div><span class="eyebrow eyebrow--gold">Roadmap</span><h2 id="roadmap-title">Version targets</h2></div>
-                <span class="roadmap-count">43 releases</span>
-              </div>
-              <div class="roadmap-disclaimer" role="note" aria-label="Roadmap disclaimer">
-                <span class="roadmap-disclaimer__mark" aria-hidden="true">!</span>
-                <div>
-                  <strong>This entire roadmap can change at literally any time.</strong>
-                  <p>Nothing here is a final promise—including the included versions, their order, release plans, or account requirements.</p>
-                </div>
-              </div>
-              <div class="roadmap-legend" aria-label="Roadmap status key">
-                <span class="roadmap-legend__current">In development</span>
-                <span class="roadmap-legend__planned">Planned</span>
-              </div>
-
-              <section class="version-era" aria-labelledby="alpha-era-title">
-                <div class="version-era__head"><h3 id="alpha-era-title">Alpha</h3><span>15 releases</span></div>
-                <ol class="version-grid">
-                  <li class="current"><span>01</span><div><strong>Alpha 1.1.2_01</strong><small>Current target</small></div></li>
-                  <li><span>02</span><strong>Alpha 1.2.0</strong></li>
-                  <li><span>03</span><strong>Alpha 1.2.0_01</strong></li>
-                  <li><span>04</span><strong>Alpha 1.2.0_02</strong></li>
-                  <li><span>05</span><strong>Alpha 1.2.1</strong></li>
-                  <li><span>06</span><strong>Alpha 1.2.1_01</strong></li>
-                  <li><span>07</span><strong>Alpha 1.2.2</strong></li>
-                  <li><span>08</span><strong>Alpha 1.2.3</strong></li>
-                  <li><span>09</span><strong>Alpha 1.2.3_01</strong></li>
-                  <li><span>10</span><strong>Alpha 1.2.3_02</strong></li>
-                  <li><span>11</span><strong>Alpha 1.2.3_04</strong></li>
-                  <li><span>12</span><strong>Alpha 1.2.3_05</strong></li>
-                  <li><span>13</span><strong>Alpha 1.2.4_01</strong></li>
-                  <li><span>14</span><strong>Alpha 1.2.5</strong></li>
-                  <li><span>15</span><strong>Alpha 1.2.6</strong></li>
-                </ol>
-              </section>
-
-              <section class="version-era" aria-labelledby="beta-era-title">
-                <div class="version-era__head"><h3 id="beta-era-title">Beta</h3><span>28 releases</span></div>
-                <ol class="version-grid" start="16">
-                  <li><span>16</span><strong>Beta 1.0</strong></li>
-                  <li><span>17</span><strong>Beta 1.0_01</strong></li>
-                  <li><span>18</span><strong>Beta 1.0.2</strong></li>
-                  <li><span>19</span><strong>Beta 1.1</strong></li>
-                  <li><span>20</span><strong>Beta 1.1_01</strong></li>
-                  <li><span>21</span><strong>Beta 1.1_02</strong></li>
-                  <li><span>22</span><strong>Beta 1.2</strong></li>
-                  <li><span>23</span><strong>Beta 1.2_01</strong></li>
-                  <li><span>24</span><strong>Beta 1.2_02</strong></li>
-                  <li><span>25</span><strong>Beta 1.3</strong></li>
-                  <li><span>26</span><strong>Beta 1.3_01</strong></li>
-                  <li><span>27</span><strong>Beta 1.4</strong></li>
-                  <li><span>28</span><strong>Beta 1.4_01</strong></li>
-                  <li><span>29</span><strong>Beta 1.5</strong></li>
-                  <li><span>30</span><strong>Beta 1.5_01</strong></li>
-                  <li><span>31</span><strong>Beta 1.6</strong></li>
-                  <li><span>32</span><strong>Beta 1.6.1</strong></li>
-                  <li><span>33</span><strong>Beta 1.6.2</strong></li>
-                  <li><span>34</span><strong>Beta 1.6.3</strong></li>
-                  <li><span>35</span><strong>Beta 1.6.4</strong></li>
-                  <li><span>36</span><strong>Beta 1.6.5</strong></li>
-                  <li><span>37</span><strong>Beta 1.6.6</strong></li>
-                  <li><span>38</span><strong>Beta 1.7</strong></li>
-                  <li><span>39</span><strong>Beta 1.7_01</strong></li>
-                  <li><span>40</span><strong>Beta 1.7.2</strong></li>
-                  <li><span>41</span><strong>Beta 1.7.3</strong></li>
-                  <li><span>42</span><strong>Beta 1.8</strong></li>
-                  <li><span>43</span><strong>Beta 1.8.1</strong></li>
-                </ol>
-              </section>
-
-              <p class="roadmap-panel__note"><strong>Beta 1.8.1 is the latest listed target.</strong> Additional future versions are being considered. This roadmap is subject to change at any time.</p>
-            </section>
-          </div>
+      <aside class="construction-console" aria-label="Current development status">
+        <div class="construction-console__head">
+          <span>NEOCRAFT / BUILD STATUS</span>
+          <span class="construction-console__live"><i aria-hidden="true"></i>ACTIVE</span>
         </div>
-      </div>
-    </section>
+        <div class="construction-console__target">
+          <span>Current client version</span>
+          <strong>Alpha 1.2.6</strong>
+          <small>Development build</small>
+        </div>
+        <div class="construction-console__rows">
+          <div><span>Client development</span><strong class="status-green">Progressing rapidly</strong></div>
+          <div><span>Website</span><strong class="status-aqua">Full redesign underway</strong></div>
+          <div><span>Public access</span><strong class="status-gold">Temporarily unavailable</strong></div>
+        </div>
+      </aside>
+
+      <section class="construction-notice" aria-label="Milestone notice">
+        <span class="construction-notice__icon" aria-hidden="true">!</span>
+        <div><strong>A substantial milestone is ahead.</strong><p>There is no countdown or fictional release date. NeoCraft will return when the client and its new website are ready.</p></div>
+      </section>
+    </div>
+
+    <footer class="construction-footer">
+      <span>NeoCraft will be back.</span>
+      <span>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
+    </footer>
   </main>
-  <div data-site-footer></div>
-  <script src="assets/js/main.js?v=12"></script>
-  <script type="module" src="assets/js/panorama.js?v=26"></script>
 </body>
 </html>

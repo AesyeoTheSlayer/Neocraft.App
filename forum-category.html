@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>Forum category — NeoCraft</title>
+  <meta name="description" content="Browse a NeoCraft community forum category.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main" class="content-page forum-page" data-forum-page="category">
+    <div class="wrap forum-shell">
+      <nav class="forum-breadcrumb" aria-label="Breadcrumb"><a href="forums.html">Forums</a><span aria-hidden="true">/</span><span data-category-breadcrumb>Category</span></nav>
+      <header class="forum-category-head">
+        <div><span class="eyebrow" data-category-label>Forum category</span><h1 data-category-title>Loading category…</h1><p data-category-description></p></div>
+        <a class="btn btn--primary" data-category-new-link href="forum-new.html">Start a discussion</a>
+      </header>
+      <div class="forum-toolbar">
+        <label class="forum-search"><span class="sr-only">Search discussions</span><input class="input" type="search" data-forum-search placeholder="Search discussions in this category"></label>
+        <select class="select forum-sort" data-forum-sort aria-label="Sort discussions"><option value="activity">Latest activity</option><option value="newest">Newest</option><option value="replies">Most replies</option></select>
+      </div>
+      <section class="forum-panel">
+        <div class="forum-thread-list" data-category-threads aria-live="polite"></div>
+        <p class="forum-empty" data-forum-empty hidden>No discussions match that search.</p>
+      </section>
+    </div>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/neocraft-config.js?v=1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.min.js" integrity="sha384-l8ah+VgaWtk1mvOe9VC+OirC6qHFF4yH7l7mKRidV9MSti3E9F463bMp6ZVN4kuC" crossorigin="anonymous"></script>
+  <script src="assets/js/auth-core.js?v=1"></script>
+  <script src="assets/js/forum.js?v=3"></script>
+</body>
+</html>

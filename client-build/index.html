@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <script src="../assets/js/construction-mode.js?v=1"></script>
+    <meta name="theme-color" content="#181818" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="application-name" content="NeoCraft" />
+    <meta
+      name="description"
+      content="NeoCraft Rust-based Minecraft client test build targeting Alpha 1.1.2_01"
+    />
+    <title>NeoCraft Test Alpha — loading…</title>
+    <link rel="stylesheet" href="./styles-b4a7f4be81fe5fc.css" integrity="sha384-gcx1OxAG8Ztn6VCbe+NiZeyGhiVSdXJAffEysExpbnvJgPVtj2YNtdAqyddCP1t3"/>
+    
+<script type="module">
+import init, * as bindings from './alpha-web-client-2cdb180e2048dc95.js';
+
+try {
+  const wasm = await init({ module_or_path: './alpha-web-client-2cdb180e2048dc95_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+  dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+} catch (error) {
+  console.error('NeoCraft failed to start:', error);
+  document.body.innerHTML = '<main style="max-width:42rem;padding:2rem;text-align:center"><h1>NeoCraft could not start.</h1><p style="color:#b8b8b8;line-height:1.6">Reload the page. If the problem continues, use a current 64-bit version of Chrome or Edge and confirm that WebAssembly and WebGL2 are enabled.</p></main>';
+}
+
+</script>
+  <link rel="modulepreload" href="./alpha-web-client-2cdb180e2048dc95.js" crossorigin="anonymous" integrity="sha384-9lIf5QAJ8d5UrYp+NWzqq+gSHgkqWIT6+tm8PPeQhYmLSjSr9heCMsRr3KwFBFhy"><link rel="preload" href="./alpha-web-client-2cdb180e2048dc95_bg.wasm" crossorigin="anonymous" integrity="sha384-U4igJZEVhFCboN7cQxGKlKQGu/XPUjD8CUTu7QIuMggzucnYpgzPtEQYnfmKCM8f" as="fetch" type="application/wasm"></head>
+  <body>
+    <noscript>This client requires JavaScript to load its Rust WebAssembly module.</noscript>
+  </body>
+</html>

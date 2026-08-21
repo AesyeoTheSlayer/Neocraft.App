@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>Finishing account setup — NeoCraft</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main" class="content-page account-page">
+    <div class="wrap account-shell account-shell--callback">
+      <section class="account-callback">
+        <span class="eyebrow eyebrow--diamond">NeoCraft account</span>
+        <h1 data-callback-title>Finishing account setup…</h1>
+        <p data-callback-copy>Please wait while the secure sign-in link is checked.</p>
+        <form class="account-form account-form--callback" data-password-update hidden>
+          <label for="new-password">New password</label>
+          <input class="input" id="new-password" name="password" type="password" minlength="8" autocomplete="new-password" required>
+          <label for="new-password-confirm">Confirm new password</label>
+          <input class="input" id="new-password-confirm" name="password_confirm" type="password" minlength="8" autocomplete="new-password" required>
+          <button class="btn btn--primary" type="submit">Save new password</button>
+          <p class="account-message" data-callback-message role="status" aria-live="polite"></p>
+        </form>
+        <div class="page-actions" data-callback-actions hidden><a class="btn btn--primary" href="account.html">Continue to account</a></div>
+      </section>
+    </div>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/neocraft-config.js?v=1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.min.js" integrity="sha384-l8ah+VgaWtk1mvOe9VC+OirC6qHFF4yH7l7mKRidV9MSti3E9F463bMp6ZVN4kuC" crossorigin="anonymous"></script>
+  <script src="assets/js/auth-core.js?v=1"></script>
+  <script src="assets/js/auth-callback.js?v=3"></script>
+</body>
+</html>

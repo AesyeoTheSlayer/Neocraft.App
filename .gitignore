@@ -4,3 +4,4 @@
 # Operating-system metadata
 .DS_Store
 Thumbs.db
+# The public test client in client-build/ is deployed with GitHub Pages.

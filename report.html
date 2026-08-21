@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>Report an issue — NeoCraft</title>
+  <meta name="description" content="Submit a NeoCraft bug report, compatibility problem, account issue, or other project report.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main" class="content-page report-page">
+    <div class="wrap report-shell">
+      <header class="page-intro report-intro">
+        <span class="eyebrow eyebrow--gold">Issue tracker</span>
+        <h1>Report a problem</h1>
+        <p>Send a reproducible game bug, browser compatibility problem, account issue, website issue, or another concern directly to the NeoCraft project.</p>
+      </header>
+      <div class="report-guidance">
+        <div><span>01</span><p><strong>One problem per report</strong> keeps investigation focused.</p></div>
+        <div><span>02</span><p><strong>Exact steps matter.</strong> Explain how someone else can reproduce it.</p></div>
+        <div><span>03</span><p><strong>Keep secrets out.</strong> Never include passwords, tokens, or private account data.</p></div>
+      </div>
+      <div class="application-notice"><div><strong>Automatic local draft</strong><span>Your unfinished report is saved in this browser.</span></div><div class="application-draft-actions"><span data-report-save-state>Draft ready</span><button type="button" data-report-clear>Clear draft</button></div></div>
+
+      <form class="report-form info-card" data-issue-form data-formspree-endpoint="" novalidate>
+        <input type="hidden" name="_subject" value="New NeoCraft issue report">
+        <input type="hidden" name="source" value="neocraft.app issue tracker">
+        <div class="application-honeypot" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+        <section class="report-form-section"><div class="report-form-section__head"><span>01</span><div><h2>Classify the issue</h2><p>This helps the report reach the right part of the project.</p></div></div>
+          <div class="report-fields report-fields--three">
+            <div class="field"><label for="issue-type">Report type</label><select class="select" id="issue-type" name="type" required><option value="">Choose one</option><option value="game_bug">Game bug</option><option value="performance">Performance problem</option><option value="compatibility">Browser or device compatibility</option><option value="save_data">World or save problem</option><option value="account">Account or access issue</option><option value="website">Website issue</option><option value="security">Security or privacy concern</option><option value="other">Other</option></select></div>
+            <div class="field"><label for="issue-severity">Severity</label><select class="select" id="issue-severity" name="severity" required><option value="">Choose one</option><option value="low">Low — minor inconvenience</option><option value="medium">Medium — feature partly broken</option><option value="high">High — blocks normal play</option><option value="critical">Critical — crash, data loss, or security</option></select></div>
+            <div class="field"><label for="issue-build">Build or version</label><input class="input" id="issue-build" name="build" type="text" maxlength="80" placeholder="Example: 0.1.0-alpha.1"></div>
+          </div>
+        </section>
+
+        <section class="report-form-section"><div class="report-form-section__head"><span>02</span><div><h2>Describe what happened</h2><p>Clear, specific details make a report much easier to act on.</p></div></div>
+          <div class="field"><label for="issue-title">Short summary</label><input class="input" id="issue-title" name="title" type="text" minlength="5" maxlength="160" placeholder="A short description of the problem" required></div>
+          <div class="field"><label for="issue-summary">Full description</label><textarea class="textarea" id="issue-summary" name="summary" minlength="20" maxlength="8000" placeholder="What were you doing, and what went wrong?" required></textarea></div>
+          <div class="report-fields">
+            <div class="field"><label for="issue-steps">Steps to reproduce</label><textarea class="textarea" id="issue-steps" name="steps" maxlength="6000" placeholder="1. Open…&#10;2. Select…&#10;3. Observe…"></textarea></div>
+            <div class="field"><label for="issue-expected">Expected result</label><textarea class="textarea" id="issue-expected" name="expected" maxlength="3000" placeholder="What should have happened?"></textarea></div>
+          </div>
+          <div class="field"><label for="issue-actual">Actual result</label><textarea class="textarea" id="issue-actual" name="actual" maxlength="3000" placeholder="What happened instead?"></textarea></div>
+        </section>
+
+        <section class="report-form-section"><div class="report-form-section__head"><span>03</span><div><h2>System details</h2><p>For game, performance, and compatibility reports, include the environment where it occurred.</p></div></div>
+          <div class="report-fields report-fields--three">
+            <div class="field"><label for="issue-browser">Browser and version</label><input class="input" id="issue-browser" name="browser" type="text" maxlength="120" placeholder="Example: Chrome 140"></div>
+            <div class="field"><label for="issue-os">Operating system</label><input class="input" id="issue-os" name="operating_system" type="text" maxlength="120" placeholder="Example: Windows 11"></div>
+            <div class="field"><label for="issue-device">Device or hardware</label><input class="input" id="issue-device" name="device" type="text" maxlength="180" placeholder="Example: laptop, Intel UHD 620"></div>
+          </div>
+          <div class="report-detect"><button class="btn btn--ghost btn--sm" type="button" data-report-detect>Fill browser details automatically</button><span data-report-detect-status></span></div>
+        </section>
+
+        <section class="report-form-section"><div class="report-form-section__head"><span>04</span><div><h2>Contact and evidence</h2><p>Provide a safe way to follow up and optional links to screenshots or logs.</p></div></div>
+          <div class="report-fields">
+            <div class="field"><label for="issue-email">Contact email</label><input class="input" id="issue-email" name="email" type="email" maxlength="160" autocomplete="email" placeholder="name@example.com" required></div>
+            <div class="field"><label for="issue-evidence">Screenshot or log link</label><input class="input" id="issue-evidence" name="evidence_url" type="url" maxlength="500" placeholder="https://…"><span class="field-help">Use a share link that does not expose private files or credentials.</span></div>
+          </div>
+          <label class="account-check"><input type="checkbox" name="contact_permission" value="Yes" required><span>NeoCraft may contact me about this report.</span></label>
+          <label class="account-check"><input type="checkbox" name="safe_content" value="Confirmed" required><span>I confirmed this report contains no passwords, authentication codes, access tokens, or other sensitive account information.</span></label>
+        </section>
+
+        <div class="application-form-status" data-report-status role="status" aria-live="polite"></div>
+        <button class="btn btn--primary btn--lg application-submit" type="submit" data-report-submit>Submit report</button>
+      </form>
+
+      <section class="confirmation-card report-success" data-report-success hidden>
+        <div class="confirmation-card__mark" aria-hidden="true">✓</div><span class="eyebrow">Report received</span><h2>Thank you for the details.</h2><p>Your issue was submitted. Keep any reference number shown below in case you need to follow up.</p><strong data-report-reference></strong><div class="page-actions"><a class="btn btn--primary" href="forums.html">Visit forums</a><a class="btn btn--ghost" href="report.html">Submit another</a></div>
+      </section>
+    </div>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/neocraft-config.js?v=1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.min.js" integrity="sha384-l8ah+VgaWtk1mvOe9VC+OirC6qHFF4yH7l7mKRidV9MSti3E9F463bMp6ZVN4kuC" crossorigin="anonymous"></script>
+  <script src="assets/js/auth-core.js?v=1"></script>
+  <script src="assets/js/report.js?v=2"></script>
+</body>
+</html>

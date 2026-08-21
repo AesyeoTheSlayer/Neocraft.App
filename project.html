@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
   <title>About the project — NeoCraft</title>
   <meta name="description" content="Learn about NeoCraft, an independent Rust-based Minecraft client for modern web browsers, and its current development roadmap.">
   <meta property="og:title" content="About the NeoCraft project">
@@ -12,7 +13,7 @@
   <link rel="canonical" href="https://neocraft.app/project.html">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/font.css?v=25">
-  <link rel="stylesheet" href="assets/css/style.css?v=35">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
 </head>
 <body>
   <div data-site-header></div>
@@ -28,7 +29,7 @@
         <h2>An independent client implementation</h2>
         <p>NeoCraft is developed as its own Rust and WebAssembly client. It does not place or redistribute the original Java client inside a webpage. Its browser runtime, rendering, input, and version-support systems are developed independently.</p>
 
-        <div class="info-grid" aria-label="Project foundations">
+        <div class="info-grid" role="list" aria-label="Project foundations">
           <div class="info-tile"><span class="info-tile__number">01</span><h3>Rust engine</h3><p>A purpose-built codebase focused on reliability, performance, and maintainability.</p></div>
           <div class="info-tile"><span class="info-tile__number">02</span><h3>WebAssembly runtime</h3><p>Compiled for modern browsers so NeoCraft can run without a traditional Java client installation.</p></div>
           <div class="info-tile"><span class="info-tile__number">03</span><h3>Version support</h3><p>Development targets selected historical Java Edition versions as separate compatibility goals.</p></div>
@@ -38,11 +39,11 @@
         <p>Minecraft changed rapidly during Alpha and Beta. Mechanics, terrain, interfaces, bugs, and balance shifted between releases, so NeoCraft lists individual versions as separate compatibility targets.</p>
         <p>The current target is Alpha 1.1.2_01. The public roadmap lists additional Alpha and Beta versions under consideration, with Beta 1.8.1 currently being the latest listed target.</p>
 
-        <h2>Ownership and authentication</h2>
-        <p>Planned access requires signing in with a Microsoft account that owns Minecraft: Java Edition. Microsoft sign-in would be used for authentication and ownership verification; NeoCraft will never ask users to provide their Microsoft password directly.</p>
+        <h2>Ownership and local resources</h2>
+        <p>Using the test client requires owning Minecraft: Java Edition and supplying compatible Alpha resources locally. NeoCraft does not provide Minecraft game files and will never ask for a Microsoft password or authentication code.</p>
 
         <h2>Current status</h2>
-        <p>NeoCraft is still in development. There is no public build and no announced release date. Development posts will focus on concrete progress rather than fictional schedules or completion percentages.</p>
+        <p>The Alpha 1.1.2_01 client is playable and has entered public testing. The focus is now longer real-world play sessions, browser compatibility, low-end-device performance, unusual gameplay behavior, resource loading, save reliability, and final setup polish. There is still no announced finished-release date.</p>
 
         <h2>A roadmap, not a promise</h2>
         <p>The version list represents the current direction of the project. Included versions, their order, release plans, technical decisions, and account requirements can change at any time as development continues.</p>
@@ -50,13 +51,14 @@
         <p class="legal-note"><strong>Not an official Minecraft product.</strong> NeoCraft is independently developed and is not approved by, associated with, endorsed by, or sponsored by Mojang Studios or Microsoft.</p>
 
         <div class="page-actions">
-          <a class="btn btn--primary" href="index.html#roadmap">View the roadmap</a>
+          <a class="btn btn--primary" href="testing.html">Alpha testing</a>
+          <a class="btn btn--ghost" href="index.html#roadmap">View the roadmap</a>
           <a class="btn btn--ghost" href="updates.html">Read updates</a>
         </div>
       </article>
     </div>
   </main>
   <div data-site-footer></div>
-  <script src="assets/js/main.js?v=12"></script>
+  <script src="assets/js/main.js?v=16"></script>
 </body>
 </html>

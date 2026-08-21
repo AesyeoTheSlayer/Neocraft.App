@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/construction-mode.js?v=1"></script>
+  <title>Community forums — NeoCraft</title>
+  <meta name="description" content="Discuss NeoCraft development, testing, support, and the Alpha client with the community.">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="canonical" href="https://neocraft.app/forums.html">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/font.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=51">
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="main" class="content-page forum-page" data-forum-page="index">
+    <div class="wrap forum-shell">
+      <header class="page-intro forum-intro">
+        <span class="eyebrow eyebrow--diamond">NeoCraft community</span>
+        <h1>Forums</h1>
+        <p>Talk about development, ask for help, share testing results, and follow discussions around the NeoCraft browser client.</p>
+        <div class="page-actions"><a class="btn btn--primary" href="forum-new.html">Start a discussion</a><a class="btn btn--ghost" href="report.html">Report an issue</a></div>
+      </header>
+
+      <div class="forum-service-note" data-forum-service-note>
+        <span aria-hidden="true"></span><div><strong>Forum preview</strong><p>The complete interface is ready. Live accounts, posts, and replies will activate when the account database is connected.</p></div>
+      </div>
+
+      <div class="forum-layout">
+        <div class="forum-main">
+          <section class="forum-panel" aria-labelledby="forum-categories-title">
+            <div class="forum-panel__head"><div><span class="eyebrow">Browse</span><h2 id="forum-categories-title">Forum categories</h2></div><span class="forum-count" data-forum-category-count>4 categories</span></div>
+            <div class="forum-category-list" data-forum-categories aria-live="polite"></div>
+          </section>
+
+          <section class="forum-panel" aria-labelledby="latest-discussions-title">
+            <div class="forum-panel__head"><div><span class="eyebrow eyebrow--gold">Recent activity</span><h2 id="latest-discussions-title">Latest discussions</h2></div></div>
+            <div class="forum-thread-list" data-forum-latest aria-live="polite"></div>
+          </section>
+        </div>
+
+        <aside class="forum-sidebar">
+          <section class="forum-side-card" data-forum-account-card>
+            <span class="eyebrow eyebrow--diamond">Your account</span>
+            <h2>Join the conversation.</h2>
+            <p>Sign in to start discussions, reply to threads, and keep track of your reports.</p>
+            <a class="btn btn--primary btn--block" href="account.html?mode=signin&amp;next=forums.html">Log in</a>
+            <a class="forum-side-link" href="account.html?mode=signup">Don't have an account? Create one.</a>
+          </section>
+          <section class="forum-side-card forum-side-card--rules">
+            <span class="eyebrow eyebrow--gold">Community basics</span>
+            <ul>
+              <li>Be helpful and stay on topic.</li>
+              <li>Do not share Minecraft game files or sensitive account information.</li>
+              <li>Never post passwords, tokens, or private account data.</li>
+              <li>Use the issue form for reproducible bugs.</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/neocraft-config.js?v=1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.3/dist/umd/supabase.min.js" integrity="sha384-l8ah+VgaWtk1mvOe9VC+OirC6qHFF4yH7l7mKRidV9MSti3E9F463bMp6ZVN4kuC" crossorigin="anonymous"></script>
+  <script src="assets/js/auth-core.js?v=1"></script>
+  <script src="assets/js/forum.js?v=3"></script>
+</body>
+</html>

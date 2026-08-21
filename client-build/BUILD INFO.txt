@@ -1,0 +1,5 @@
+Neocraft Test Alpha 0.1.0-alpha.1
+Target: Minecraft Alpha 1.1.2_01 browser client
+Distribution: Rust/WebAssembly static client plus Windows local static launcher
+Cargo.lock SHA256: C85DDFDCA3CF9BC09C63848B0A2EED3C202C62A9A22E821C6CCFF5D861CC8D1B
+Mojang assets included: no
