@@ -1,4 +1,4 @@
--- NeoCraft community account, forum, and issue-tracker setup.
+-- ZephyrCraft community account, forum, and issue-tracker setup.
 -- Run this entire file once in the Supabase SQL Editor.
 
 create schema if not exists private;
@@ -173,7 +173,7 @@ begin
   where id = (select auth.uid());
 
   if profile_name is null then
-    raise exception 'A NeoCraft profile is required to post.';
+    raise exception 'A ZephyrCraft profile is required to post.';
   end if;
 
   new.author_id := (select auth.uid());
@@ -195,7 +195,7 @@ begin
   where id = (select auth.uid());
 
   if profile_email is null then
-    raise exception 'A NeoCraft profile is required to submit an issue.';
+    raise exception 'A ZephyrCraft profile is required to submit an issue.';
   end if;
 
   new.reporter_id := (select auth.uid());
@@ -347,8 +347,8 @@ with check ((select private.is_neocraft_moderator()));
 
 insert into public.forum_categories (slug, title, description, accent, locked, sort_order)
 values
-  ('announcements', 'Announcements', 'Official NeoCraft development, testing, and service announcements.', 'gold', true, 1),
-  ('general', 'General discussion', 'Talk about NeoCraft, historical versions, browser gameplay, and the project.', 'green', false, 2),
+  ('announcements', 'Announcements', 'Official ZephyrCraft development, testing, and service announcements.', 'gold', true, 1),
+  ('general', 'General discussion', 'Talk about ZephyrCraft, historical versions, browser gameplay, and the project.', 'green', false, 2),
   ('alpha-testing', 'Alpha testing', 'Share testing results, compare behavior, and discuss the current Alpha build.', 'aqua', false, 3),
   ('support', 'Help and support', 'Ask for help with setup, local resources, browsers, worlds, and accounts.', 'amethyst', false, 4)
 on conflict (slug) do update set

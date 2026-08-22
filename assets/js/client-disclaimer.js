@@ -15,7 +15,7 @@
     '<form class="test-warning-dialog__panel" data-test-warning-form>' +
       '<span class="test-warning-dialog__flag">Unfinished test software</span>' +
       '<h2 id="test-warning-title">Stop and read this before playing.</h2>' +
-      '<p class="test-warning-dialog__lead">NeoCraft is currently an early test build—not a finished release.</p>' +
+      '<p class="test-warning-dialog__lead">ZephyrCraft is currently an early test build—not a finished release.</p>' +
       '<ul>' +
         '<li>Crashes, broken behavior, graphical problems, and major bugs are expected.</li>' +
         '<li>Test worlds may become corrupted, incompatible, or disappear.</li>' +

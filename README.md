@@ -1,6 +1,6 @@
-# NeoCraft website
+# ZephyrCraft website
 
-A project and testing hub for NeoCraft, an independent Rust-based Minecraft client designed for modern browsers with WebAssembly.
+A project and testing hub for ZephyrCraft (formerly NeoCraft), an independent Rust-based Minecraft client designed for modern browsers with WebAssembly.
 
 The homepage contains the project premise, testing status, and the complete 43-release roadmap from Alpha 1.1.2_01 through Beta 1.8.1. Dedicated pages provide alpha-testing access and guidance, accounts, community forums, issue reporting, project background, development updates, newsletter signup, contact options, and the privacy policy. Former detail-page URLs redirect to the matching section of the homepage.
 
@@ -9,7 +9,7 @@ The homepage contains the project premise, testing status, and the complete 43-r
 - Alpha 1.1.2_01 is playable and in public testing.
 - Selected historical Java Edition versions through Beta 1.8.1 are listed as non-final development targets.
 - Additional versions after Beta 1.8.1 are being considered.
-- Testing requires owning Minecraft: Java Edition and supplying compatible Alpha resources locally; NeoCraft does not distribute Minecraft game files.
+- Testing requires owning Minecraft: Java Edition and supplying compatible Alpha resources locally; ZephyrCraft does not distribute Minecraft game files.
 
 The entire roadmap—including its versions, order, release plans, and account requirements—can change at any time.
 
@@ -23,7 +23,7 @@ The playable Alpha 1.1.2_01 build is publicly available as unfinished test softw
 
 The email form on `signup.html` submits to the configured Buttondown embed-subscribe endpoint and is enabled by `assets/js/newsletter.js` after the page loads.
 
-Buttondown's subscription confirmation redirect URL should be set to `https://neocraft.app/confirmed.html` so confirmed subscribers return to the branded NeoCraft confirmation page.
+Buttondown's subscription confirmation redirect URL should be set to `https://neocraft.app/confirmed.html` so confirmed subscribers return to the branded ZephyrCraft confirmation page.
 
 ## Accounts, forums, and issue reports
 

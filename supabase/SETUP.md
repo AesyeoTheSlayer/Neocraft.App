@@ -1,4 +1,4 @@
-# NeoCraft account setup
+# ZephyrCraft account setup
 
 The website side is already built. These are the only external setup steps.
 
@@ -24,7 +24,7 @@ Open **Authentication → URL Configuration**.
 
 Leave email confirmation enabled.
 
-If you customize Supabase's confirmation or recovery email templates, keep the standard `{{ .ConfirmationURL }}` link or build the link with `{{ .RedirectTo }}`. Otherwise Supabase may send people to the Site URL instead of the NeoCraft callback page.
+If you customize Supabase's confirmation or recovery email templates, keep the standard `{{ .ConfirmationURL }}` link or build the link with `{{ .RedirectTo }}`. Otherwise Supabase may send people to the Site URL instead of the ZephyrCraft callback page.
 
 ## 4. Connect account email delivery
 
@@ -34,7 +34,7 @@ Supabase's built-in test mailer only sends to members of your Supabase organizat
 2. Add a sending subdomain such as `auth.neocraft.app`.
 3. Copy the DNS records Resend gives you into GoDaddy and wait for verification.
 4. In Resend, open **Integrations**, choose **Supabase**, and connect the new project.
-5. Use a sender such as `NeoCraft Accounts <accounts@auth.neocraft.app>`.
+5. Use a sender such as `ZephyrCraft Accounts <accounts@auth.neocraft.app>`.
 
 Resend's Supabase integration configures the SMTP connection for you. Do not send Codex the SMTP password or Resend API key.
 

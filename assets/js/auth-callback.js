@@ -36,7 +36,7 @@
 
   async function initialize() {
     if (!auth || !auth.isConfigured()) {
-      fail('The NeoCraft account service is not connected yet.');
+      fail('The ZephyrCraft account service is not connected yet.');
       return;
     }
 
@@ -59,7 +59,7 @@
         passwordForm.hidden = false;
       } else {
         title.textContent = 'Email confirmed.';
-        copy.textContent = 'Your NeoCraft account is ready. Testing access may still require manual approval.';
+        copy.textContent = 'Your ZephyrCraft account is ready. Testing access may still require manual approval.';
         actions.hidden = false;
       }
     } catch (error) {
@@ -81,7 +81,7 @@
       if (result.error) throw result.error;
       passwordForm.hidden = true;
       title.textContent = 'Password updated.';
-      copy.textContent = 'You can now continue to your NeoCraft account.';
+      copy.textContent = 'You can now continue to your ZephyrCraft account.';
       actions.hidden = false;
     } catch (error) {
       output.textContent = error.message || 'The password could not be updated.';

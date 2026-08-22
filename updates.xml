@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>NeoCraft development updates</title>
+    <title>ZephyrCraft development updates</title>
     <link>https://neocraft.app/updates.html</link>
-    <description>Alpha-testing reports, development news, roadmap changes, and progress reports from NeoCraft.</description>
+    <description>Alpha-testing reports, development news, roadmap changes, and progress reports from ZephyrCraft, formerly NeoCraft.</description>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Aug 2026 12:00:00 GMT</lastBuildDate>
     <item>
-      <title>NeoCraft Development Update #1 — It’s Playable</title>
+      <title>ZephyrCraft Development Update #1 — It’s Playable</title>
       <link>https://neocraft.app/update-playable-2026-08.html</link>
       <guid isPermaLink="true">https://neocraft.app/update-playable-2026-08.html</guid>
       <pubDate>Wed, 19 Aug 2026 12:00:00 GMT</pubDate>
-      <description>NeoCraft is now playable in the browser. See what works, how the client is verified, and what remains before release.</description>
+      <description>ZephyrCraft is now playable in the browser. See what works, how the client is verified, and what remains before release.</description>
     </item>
     <item>
-      <title>Welcome to the NeoCraft development log</title>
+      <title>Welcome to the ZephyrCraft development log</title>
       <link>https://neocraft.app/update-welcome-2026-08.html</link>
       <guid isPermaLink="true">https://neocraft.app/update-welcome-2026-08.html</guid>
       <pubDate>Fri, 07 Aug 2026 12:00:00 GMT</pubDate>
-      <description>An introduction to NeoCraft, what is currently being built, and what to expect from future development updates.</description>
+      <description>An introduction to ZephyrCraft, what is currently being built, and what to expect from future development updates.</description>
     </item>
   </channel>
 </rss>

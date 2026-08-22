@@ -8,24 +8,24 @@
   var page = root.dataset.forumPage;
   var params = new URLSearchParams(location.search);
   var previewCategories = [
-    { id: 'preview-announcements', slug: 'announcements', title: 'Announcements', description: 'Official NeoCraft development, testing, and service announcements.', accent: 'gold', locked: true, sort_order: 1 },
-    { id: 'preview-general', slug: 'general', title: 'General discussion', description: 'Talk about NeoCraft, historical versions, browser gameplay, and the project.', accent: 'green', locked: false, sort_order: 2 },
+    { id: 'preview-announcements', slug: 'announcements', title: 'Announcements', description: 'Official ZephyrCraft development, testing, and service announcements.', accent: 'gold', locked: true, sort_order: 1 },
+    { id: 'preview-general', slug: 'general', title: 'General discussion', description: 'Talk about ZephyrCraft, historical versions, browser gameplay, and the project.', accent: 'green', locked: false, sort_order: 2 },
     { id: 'preview-testing', slug: 'alpha-testing', title: 'Alpha testing', description: 'Share testing results, compare behavior, and discuss the current Alpha build.', accent: 'aqua', locked: false, sort_order: 3 },
     { id: 'preview-support', slug: 'support', title: 'Help and support', description: 'Ask for help with setup, local resources, browsers, worlds, and accounts.', accent: 'amethyst', locked: false, sort_order: 4 }
   ];
   var previewThreads = [
-    { id: 'welcome', category_slug: 'announcements', category_title: 'Announcements', title: 'Welcome to the NeoCraft community forums', author_name: 'Preston', body: 'This is the community space for NeoCraft development, testing, help, and discussion. Please keep conversations useful, never share Minecraft game files or sensitive information, and use the issue tracker when you have a reproducible bug.\n\nThe forum interface is being prepared alongside the account system. Live posting will open when the community database is connected.', is_pinned: true, is_locked: false, created_at: '2026-08-19T14:00:00-05:00', updated_at: '2026-08-19T14:00:00-05:00', reply_count: 2 },
+    { id: 'welcome', category_slug: 'announcements', category_title: 'Announcements', title: 'Welcome to the ZephyrCraft community forums', author_name: 'Preston', body: 'This is the community space for ZephyrCraft development, testing, help, and discussion. Please keep conversations useful, never share Minecraft game files or sensitive information, and use the issue tracker when you have a reproducible bug.\n\nThe forum interface is being prepared alongside the account system. Live posting will open when the community database is connected.', is_pinned: true, is_locked: false, created_at: '2026-08-19T14:00:00-05:00', updated_at: '2026-08-19T14:00:00-05:00', reply_count: 2 },
     { id: 'alpha-playable', category_slug: 'alpha-testing', category_title: 'Alpha testing', title: 'Alpha 1.1.2_01 testing: what to focus on', author_name: 'Preston', body: 'The current testing phase is focused on longer sessions, different world seeds, browser compatibility, save reliability, and performance on lower-powered hardware.\n\nIf something breaks consistently, please submit a full issue report with your browser, operating system, steps to reproduce, expected result, and actual result.', is_pinned: true, is_locked: false, created_at: '2026-08-19T14:20:00-05:00', updated_at: '2026-08-19T15:10:00-05:00', reply_count: 1 },
-    { id: 'resource-loading', category_slug: 'support', category_title: 'Help and support', title: 'Before asking for help with resource loading', author_name: 'NeoCraft Team', body: 'Make sure the selected client JAR is the exact supported version and has not been modified by a launcher or mod. The browser reads the file locally; it is not uploaded to NeoCraft.\n\nWhen asking for help, include the browser name and the exact error shown on the client page. Do not upload or share the JAR itself.', is_pinned: false, is_locked: false, created_at: '2026-08-19T15:00:00-05:00', updated_at: '2026-08-19T15:00:00-05:00', reply_count: 0 },
-    { id: 'browser-performance', category_slug: 'general', category_title: 'General discussion', title: 'What hardware are you planning to test on?', author_name: 'Community preview', body: 'One goal of testing is to understand how NeoCraft behaves across older laptops, Chromebooks, integrated graphics, and modern desktop systems. What hardware and browser would you be using?', is_pinned: false, is_locked: false, created_at: '2026-08-19T15:35:00-05:00', updated_at: '2026-08-19T15:35:00-05:00', reply_count: 0 }
+    { id: 'resource-loading', category_slug: 'support', category_title: 'Help and support', title: 'Before asking for help with resource loading', author_name: 'ZephyrCraft Team', body: 'Make sure the selected client JAR is the exact supported version and has not been modified by a launcher or mod. The browser reads the file locally; it is not uploaded to ZephyrCraft.\n\nWhen asking for help, include the browser name and the exact error shown on the client page. Do not upload or share the JAR itself.', is_pinned: false, is_locked: false, created_at: '2026-08-19T15:00:00-05:00', updated_at: '2026-08-19T15:00:00-05:00', reply_count: 0 },
+    { id: 'browser-performance', category_slug: 'general', category_title: 'General discussion', title: 'What hardware are you planning to test on?', author_name: 'Community preview', body: 'One goal of testing is to understand how ZephyrCraft behaves across older laptops, Chromebooks, integrated graphics, and modern desktop systems. What hardware and browser would you be using?', is_pinned: false, is_locked: false, created_at: '2026-08-19T15:35:00-05:00', updated_at: '2026-08-19T15:35:00-05:00', reply_count: 0 }
   ];
   var previewReplies = {
     welcome: [
-      { id: 'welcome-reply-1', author_name: 'NeoCraft Team', body: 'Development updates will continue to be posted on the main updates page. The forums are for longer conversations and community support.', created_at: '2026-08-19T14:10:00-05:00' },
+      { id: 'welcome-reply-1', author_name: 'ZephyrCraft Team', body: 'Development updates will continue to be posted on the main updates page. The forums are for longer conversations and community support.', created_at: '2026-08-19T14:10:00-05:00' },
       { id: 'welcome-reply-2', author_name: 'Community preview', body: 'Live replies will appear here after the account database is connected.', created_at: '2026-08-19T14:12:00-05:00' }
     ],
     'alpha-playable': [
-      { id: 'alpha-reply-1', author_name: 'NeoCraft Team', body: 'World creation, saving, reloading, and longer sessions are especially useful areas to test.', created_at: '2026-08-19T15:10:00-05:00' }
+      { id: 'alpha-reply-1', author_name: 'ZephyrCraft Team', body: 'World creation, saving, reloading, and longer sessions are especially useful areas to test.', created_at: '2026-08-19T15:10:00-05:00' }
     ],
     'resource-loading': [],
     'browser-performance': []
@@ -189,7 +189,7 @@
     document.querySelector('[data-category-label]').textContent = category.locked ? 'Official category' : 'Community category';
     document.querySelector('[data-category-new-link]').href = 'forum-new.html?category=' + encodeURIComponent(category.slug);
     if (category.locked) document.querySelector('[data-category-new-link]').hidden = true;
-    document.title = category.title + ' — NeoCraft forums';
+    document.title = category.title + ' — ZephyrCraft forums';
 
     var allThreads;
     if (!configured()) {
@@ -239,7 +239,7 @@
       replies = replyResult.data || [];
     }
     if (!thread) { location.href = 'forums.html'; return; }
-    document.title = thread.title + ' — NeoCraft forums';
+    document.title = thread.title + ' — ZephyrCraft forums';
     var categoryLink = document.querySelector('[data-thread-category-link]');
     categoryLink.textContent = thread.category_title;
     categoryLink.href = 'forum-category.html?category=' + encodeURIComponent(thread.category_slug);

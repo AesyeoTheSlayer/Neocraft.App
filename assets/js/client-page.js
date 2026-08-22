@@ -44,7 +44,7 @@
     if (!continueButton) return;
 
     launchStarted = true;
-    setStatus('Verified. Starting NeoCraft…', 'ready');
+    setStatus('Verified. Starting ZephyrCraft…', 'ready');
     if (chooseJarButton) chooseJarButton.disabled = true;
     if (setup) setup.hidden = true;
     if (stage) {

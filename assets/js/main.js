@@ -2,7 +2,7 @@
   'use strict';
 
   function cube() {
-    return '<svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 30 9 16 16 2 9Z" fill="#5dd45d"/><path d="M2 9 16 16v14L2 23Z" fill="#6b4a2f"/><path d="M30 9 16 16v14l14-7Z" fill="#8a6440"/></svg>';
+    return '<svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 30 9 16 16 2 9Z" fill="#79c10f"/><path d="M2 9 16 16v14L2 23Z" fill="#6b4a2f"/><path d="M30 9 16 16v14l14-7Z" fill="#8a6440"/></svg>';
   }
 
   function buildHeader() {
@@ -20,7 +20,7 @@
     root.innerHTML =
       '<a class="skip-link" href="#main">Skip to content</a>' +
       '<header class="nav"><div class="nav__inner">' +
-      '<a class="brand" href="index.html">' + cube() + '<span class="brand__text">Neo<span>Craft</span></span><span class="brand__tag">Rust/WASM</span></a>' +
+      '<a class="brand" href="index.html">' + cube() + '<span class="brand__text">Zephyr<span>Craft</span></span><span class="brand__tag">Rust/WASM</span></a>' +
       '<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation"><span></span></button>' +
       '<nav class="nav__links" id="navlinks" aria-label="Main">' +
       '<a href="index.html"' + current(onHome) + '>Home</a>' +
@@ -40,7 +40,7 @@
     if (!root) return;
     root.innerHTML =
       '<footer class="footer"><div class="wrap"><div class="footer__bottom">' +
-      '<p class="footer__legal mb-0">Not an official Minecraft product. NeoCraft is not approved by or associated with Mojang Studios or Microsoft.</p>' +
+      '<p class="footer__legal mb-0">Not an official Minecraft product. ZephyrCraft is not approved by or associated with Mojang Studios or Microsoft.</p>' +
       '<nav class="footer__links" aria-label="Footer"><a href="testing.html">Testing</a><a href="project.html">Project</a><a href="updates.html">Updates</a><a href="forums.html">Forums</a><a href="report.html">Report an issue</a><a href="signup.html">Get updates</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav>' +
       '</div></div></footer>';
   }

@@ -45,11 +45,12 @@
 }
 
 .construction-copy { min-width: 0; }
-.construction-logo { width: min(520px, 100%); height: auto; margin: 4px 0 34px; image-rendering: pixelated; filter: drop-shadow(5px 6px 0 rgba(0, 0, 0, .52)); }
+.construction-logo { width: min(560px, 100%); height: auto; margin: 4px 0 7px; image-rendering: pixelated; filter: drop-shadow(5px 7px 0 rgba(0, 0, 0, .52)); }
+.construction-formerly { display: block; width: fit-content; margin: 14px 0 30px; padding: 5px 9px; color: var(--mc-gray); background: #1a1b1f; border: 2px solid var(--outline); font-size: .58rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
 .construction-copy h1 { max-width: 13ch; margin-bottom: 20px; font-size: clamp(1.85rem, 4.2vw, 3.45rem); line-height: 1.08; }
 .construction-copy > p { max-width: 62ch; color: var(--ink-3); font-size: .82rem; line-height: 1.78; }
 .construction-copy .construction-lead { color: var(--ink-2); font-size: .92rem; }
-.construction-copy .construction-lead strong { color: var(--mc-green); text-shadow: 2px 2px 0 #153f15; }
+.construction-copy .construction-lead strong { color: var(--mc-green); text-shadow: 2px 2px 0 var(--mc-dgreen); }
 
 .construction-console {
   min-width: 0;
@@ -60,7 +61,7 @@
 
 .construction-console__head { min-height: 47px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; gap: 14px; color: var(--mc-gray); font-size: .61rem; letter-spacing: .08em; background: #35363c; border-bottom: 3px solid var(--outline); box-shadow: inset 0 2px 0 rgba(255, 255, 255, .1); }
 .construction-console__live { display: inline-flex; align-items: center; gap: 7px; color: var(--mc-green); }
-.construction-console__live i { width: 8px; height: 8px; background: var(--mc-green); box-shadow: 0 0 9px rgba(85, 255, 85, .52); }
+.construction-console__live i { width: 8px; height: 8px; background: var(--mc-green); box-shadow: 0 0 9px rgba(121, 193, 15, .42); }
 
 .construction-console__target { padding: clamp(27px, 4vw, 42px) 25px; background: #151619; border-bottom: 3px solid var(--outline); }
 .construction-console__target > span { display: block; margin-bottom: 8px; color: #8f9298; font-size: .61rem; text-transform: uppercase; }
@@ -92,7 +93,7 @@
   .construction-bar__status { font-size: 0; }
   .construction-bar__status i { display: block; }
   .construction-wrap { padding-top: 44px; gap: 32px; }
-  .construction-logo { margin-bottom: 27px; }
+  .construction-formerly { margin-bottom: 25px; }
   .construction-console__rows > div { grid-template-columns: 1fr; gap: 3px; }
   .construction-console__rows strong { text-align: left; }
   .construction-notice { align-items: start; }
